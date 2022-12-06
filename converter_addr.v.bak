@@ -1,0 +1,3 @@
+module convert_addr(ADDR, x, y);
+input [19:0] ADDR;
+output [9:0] x,y;
