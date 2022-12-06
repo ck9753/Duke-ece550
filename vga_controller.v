@@ -6,12 +6,14 @@ module vga_controller(iRST_n,
                       b_data,
                       g_data,
                       r_data,
-							 up,down,left,right);
+							 up,
+							 reset,
+							 start);
 
 	
 input iRST_n;
 input iVGA_CLK;
-input up,down,left,right;
+input up, reset, start;
 output reg oBLANK_n;
 output reg oHS;
 output reg oVS;
@@ -21,6 +23,7 @@ output [7:0] r_data;
 ///////// ////                     
 reg [18:0] ADDR;
 reg [23:0] bgr_data;
+reg trigger;
 wire VGA_CLK_n;
 wire [7:0] index;
 wire [23:0] bgr_data_raw;
@@ -64,29 +67,40 @@ end
 reg [9:0] x,ADDRx;
 reg [8:0] y, ADDRy;
 initial begin
- x <= 10'd0;
- y <= 9'd0;
+ x <= 10'd100;
+ y <= 9'd240;
+ trigger <= 0;
  end
 
 always@(posedge iVGA_CLK)
 begin
-
-	counter <= counter + 1; 
-   if(counter % 32'd25000 == 0)begin	  
-	 if(x < 10'd610 && x > 10'd0)	  
-    x<=x + right - left;  //x
-	 else if (x == 10'd610)
-	 x<=x - left;
-	 else if(x == 0)
-	 x<= x + right;
-	 if(y < 9'd450 && y > 9'd0)	  
-    y<=y - up + down;  //x
-	 else if (y == 9'd450)
-	 y<=y - up;
-	 else if(y == 0)
-	 y<= y + down;
+	if (!start) begin
+		trigger <= 1;
+	end
+	if (!reset) begin
+		x <= 10'd100;
+		y <= 9'd240;
+		trigger <= 0;
+	end
 	
+	if (trigger) begin
+	counter <= counter + 1; 
+   if(counter % 32'd250000 == 0)begin	  
+//	 if(x < 10'd610 && x > 10'd0)	  
+//    x<=x + right - left;  //x
+//	 else if (x == 10'd610)
+//	 x<=x - left;
+//	 else if(x == 0)
+//	 x<= x + right;
+	 if(y < 9'd450 && y > 9'd0)
+		y <= y - 4; // falling down
+		if (up)
+			y <= y + 1;
+		else if (y == 9'd450 && y == 0)
+			y <= y;	 //lose
+	 
 	  
+	 end
 	 end
 	//counter <= counter + 1;	
 //	if(x < 10'd610 || right != 1'b1) 

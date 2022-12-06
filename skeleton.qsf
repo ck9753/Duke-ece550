@@ -165,6 +165,8 @@ set_location_assignment PIN_H21 -to leds[4]
 set_location_assignment PIN_G20 -to leds[5]
 set_location_assignment PIN_G22 -to leds[6]
 set_location_assignment PIN_G21 -to leds[7]
+set_location_assignment PIN_M23 -to up
+set_location_assignment PIN_M21 -to down
 set_global_assignment -name MIF_FILE index.mif
 set_global_assignment -name MIF_FILE index_logo.mif
 set_global_assignment -name MIF_FILE img_bars.mif
@@ -198,8 +200,6 @@ set_global_assignment -name MIF_FILE reci8_img_index.mif
 set_global_assignment -name MIF_FILE reci8_img_data.mif
 set_global_assignment -name VERILOG_FILE output_files/skeleton.v
 set_global_assignment -name VERILOG_FILE converter_addr.v
-set_location_assignment PIN_R24 -to left
-set_location_assignment PIN_N21 -to right
-set_location_assignment PIN_M23 -to up
-set_location_assignment PIN_M21 -to down
+set_location_assignment PIN_R24 -to start
+set_location_assignment PIN_N21 -to reset
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -224,11 +224,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "right",
-					"strict" : false
-				},
-				{
-					"name" : "left",
+					"name" : "reset",
 					"strict" : false
 				},
 				{
@@ -236,7 +232,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "down",
+					"name" : "start",
 					"strict" : false
 				}
 			]

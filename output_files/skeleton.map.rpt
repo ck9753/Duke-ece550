@@ -1,5 +1,5 @@
 Analysis & Synthesis report for skeleton
-Tue Nov 15 17:26:23 2022
+Tue Dec 06 16:26:25 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -83,16 +83,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 15 17:26:23 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 06 16:26:25 2022       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,451                                       ;
-;     Total combinational functions  ; 2,321                                       ;
-;     Dedicated logic registers      ; 483                                         ;
-; Total registers                    ; 483                                         ;
-; Total pins                         ; 158                                         ;
+; Total logic elements               ; 2,361                                       ;
+;     Total combinational functions  ; 2,232                                       ;
+;     Dedicated logic registers      ; 473                                         ;
+; Total registers                    ; 473                                         ;
+; Total pins                         ; 157                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,463,744                                   ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -203,65 +203,65 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                            ;
-+----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                                    ; Library ;
-+----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; imem.mif                         ; yes             ; User Memory Initialization File  ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/imem.mif                       ;         ;
-; dmem.mif                         ; yes             ; User Memory Initialization File  ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/dmem.mif                       ;         ;
-; VGA_Audio_PLL.v                  ; yes             ; User Wizard-Generated File       ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/VGA_Audio_PLL.v                ;         ;
-; Reset_Delay.v                    ; yes             ; User Verilog HDL File            ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/Reset_Delay.v                  ;         ;
-; skeleton.v                       ; yes             ; User Verilog HDL File            ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v                     ;         ;
-; PS2_Interface.v                  ; yes             ; User Verilog HDL File            ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/PS2_Interface.v                ;         ;
-; PS2_Controller.v                 ; yes             ; User Verilog HDL File            ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/PS2_Controller.v               ;         ;
-; processor.v                      ; yes             ; User Verilog HDL File            ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/processor.v                    ;         ;
-; pll.v                            ; yes             ; User Wizard-Generated File       ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/pll.v                          ;         ;
-; lcd.sv                           ; yes             ; User SystemVerilog HDL File      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/lcd.sv                         ;         ;
-; imem.v                           ; yes             ; User Wizard-Generated File       ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/imem.v                         ;         ;
-; Hexadecimal_To_Seven_Segment.v   ; yes             ; User Verilog HDL File            ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/Hexadecimal_To_Seven_Segment.v ;         ;
-; dmem.v                           ; yes             ; User Wizard-Generated File       ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/dmem.v                         ;         ;
-; Altera_UP_PS2_Data_In.v          ; yes             ; User Verilog HDL File            ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/Altera_UP_PS2_Data_In.v        ;         ;
-; Altera_UP_PS2_Command_Out.v      ; yes             ; User Verilog HDL File            ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/Altera_UP_PS2_Command_Out.v    ;         ;
-; vga_controller.v                 ; yes             ; User Verilog HDL File            ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v               ;         ;
-; video_sync_generator.v           ; yes             ; User Verilog HDL File            ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/video_sync_generator.v         ;         ;
-; img_index.v                      ; yes             ; User Wizard-Generated File       ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/img_index.v                    ;         ;
-; img_data.v                       ; yes             ; User Wizard-Generated File       ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/img_data.v                     ;         ;
-; reci8_img_index.mif              ; yes             ; User Memory Initialization File  ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/reci8_img_index.mif            ;         ;
-; reci8_img_data.mif               ; yes             ; User Memory Initialization File  ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/reci8_img_data.mif             ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/altpll.tdf                                                  ;         ;
-; aglobal170.inc                   ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/aglobal170.inc                                              ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/stratix_pll.inc                                             ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/stratixii_pll.inc                                           ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/cycloneii_pll.inc                                           ;         ;
-; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/pll_altpll.v                ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/altsyncram.tdf                                              ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/stratix_ram_block.inc                                       ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/lpm_mux.inc                                                 ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/lpm_decode.inc                                              ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/a_rdenreg.inc                                               ;         ;
-; altrom.inc                       ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/altrom.inc                                                  ;         ;
-; altram.inc                       ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/altram.inc                                                  ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/altdpram.inc                                                ;         ;
-; db/altsyncram_8vc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf         ;         ;
-; db/altsyncram_2m81.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf         ;         ;
-; db/altsyncram_3oc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_3oc1.tdf         ;         ;
-; db/decode_aaa.tdf                ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/decode_aaa.tdf              ;         ;
-; db/mux_1pb.tdf                   ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/mux_1pb.tdf                 ;         ;
-; db/altsyncram_enc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_enc1.tdf         ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/lpm_divide.tdf                                              ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/abs_divider.inc                                             ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                     ; c:/lxy/dukesoftware/quartus/libraries/megafunctions/sign_div_unsign.inc                                         ;         ;
-; db/lpm_divide_mcm.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/lpm_divide_mcm.tdf          ;         ;
-; db/sign_div_unsign_bnh.tdf       ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/sign_div_unsign_bnh.tdf     ;         ;
-; db/alt_u_div_9af.tdf             ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/alt_u_div_9af.tdf           ;         ;
-; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/add_sub_7pc.tdf             ;         ;
-; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/add_sub_8pc.tdf             ;         ;
-; db/lpm_divide_ikm.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/lpm_divide_ikm.tdf          ;         ;
-; db/lpm_divide_lcm.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/lpm_divide_lcm.tdf          ;         ;
-; db/sign_div_unsign_anh.tdf       ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/sign_div_unsign_anh.tdf     ;         ;
-; db/alt_u_div_8af.tdf             ; yes             ; Auto-Generated Megafunction      ; C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/alt_u_div_8af.tdf           ;         ;
-+----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------+---------+
+; imem.mif                         ; yes             ; User Memory Initialization File  ; C:/Users/Owner/Documents/FlappyBird/imem.mif                                 ;         ;
+; dmem.mif                         ; yes             ; User Memory Initialization File  ; C:/Users/Owner/Documents/FlappyBird/dmem.mif                                 ;         ;
+; VGA_Audio_PLL.v                  ; yes             ; User Wizard-Generated File       ; C:/Users/Owner/Documents/FlappyBird/VGA_Audio_PLL.v                          ;         ;
+; Reset_Delay.v                    ; yes             ; User Verilog HDL File            ; C:/Users/Owner/Documents/FlappyBird/Reset_Delay.v                            ;         ;
+; skeleton.v                       ; yes             ; User Verilog HDL File            ; C:/Users/Owner/Documents/FlappyBird/skeleton.v                               ;         ;
+; PS2_Interface.v                  ; yes             ; User Verilog HDL File            ; C:/Users/Owner/Documents/FlappyBird/PS2_Interface.v                          ;         ;
+; PS2_Controller.v                 ; yes             ; User Verilog HDL File            ; C:/Users/Owner/Documents/FlappyBird/PS2_Controller.v                         ;         ;
+; processor.v                      ; yes             ; User Verilog HDL File            ; C:/Users/Owner/Documents/FlappyBird/processor.v                              ;         ;
+; pll.v                            ; yes             ; User Wizard-Generated File       ; C:/Users/Owner/Documents/FlappyBird/pll.v                                    ;         ;
+; lcd.sv                           ; yes             ; User SystemVerilog HDL File      ; C:/Users/Owner/Documents/FlappyBird/lcd.sv                                   ;         ;
+; imem.v                           ; yes             ; User Wizard-Generated File       ; C:/Users/Owner/Documents/FlappyBird/imem.v                                   ;         ;
+; Hexadecimal_To_Seven_Segment.v   ; yes             ; User Verilog HDL File            ; C:/Users/Owner/Documents/FlappyBird/Hexadecimal_To_Seven_Segment.v           ;         ;
+; dmem.v                           ; yes             ; User Wizard-Generated File       ; C:/Users/Owner/Documents/FlappyBird/dmem.v                                   ;         ;
+; Altera_UP_PS2_Data_In.v          ; yes             ; User Verilog HDL File            ; C:/Users/Owner/Documents/FlappyBird/Altera_UP_PS2_Data_In.v                  ;         ;
+; Altera_UP_PS2_Command_Out.v      ; yes             ; User Verilog HDL File            ; C:/Users/Owner/Documents/FlappyBird/Altera_UP_PS2_Command_Out.v              ;         ;
+; vga_controller.v                 ; yes             ; User Verilog HDL File            ; C:/Users/Owner/Documents/FlappyBird/vga_controller.v                         ;         ;
+; video_sync_generator.v           ; yes             ; User Verilog HDL File            ; C:/Users/Owner/Documents/FlappyBird/video_sync_generator.v                   ;         ;
+; img_index.v                      ; yes             ; User Wizard-Generated File       ; C:/Users/Owner/Documents/FlappyBird/img_index.v                              ;         ;
+; img_data.v                       ; yes             ; User Wizard-Generated File       ; C:/Users/Owner/Documents/FlappyBird/img_data.v                               ;         ;
+; reci8_img_index.mif              ; yes             ; User Memory Initialization File  ; C:/Users/Owner/Documents/FlappyBird/reci8_img_index.mif                      ;         ;
+; reci8_img_data.mif               ; yes             ; User Memory Initialization File  ; C:/Users/Owner/Documents/FlappyBird/reci8_img_data.mif                       ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf            ;         ;
+; aglobal170.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc        ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_pll.inc       ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratixii_pll.inc     ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/cycloneii_pll.inc     ;         ;
+; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/pll_altpll.v                          ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_8vc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf                   ;         ;
+; db/altsyncram_2m81.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf                   ;         ;
+; db/altsyncram_3oc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/altsyncram_3oc1.tdf                   ;         ;
+; db/decode_aaa.tdf                ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/decode_aaa.tdf                        ;         ;
+; db/mux_1pb.tdf                   ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/mux_1pb.tdf                           ;         ;
+; db/altsyncram_enc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/altsyncram_enc1.tdf                   ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_divide.tdf        ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/abs_divider.inc       ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/sign_div_unsign.inc   ;         ;
+; db/lpm_divide_mcm.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/lpm_divide_mcm.tdf                    ;         ;
+; db/sign_div_unsign_bnh.tdf       ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/sign_div_unsign_bnh.tdf               ;         ;
+; db/alt_u_div_9af.tdf             ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/alt_u_div_9af.tdf                     ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/add_sub_7pc.tdf                       ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/add_sub_8pc.tdf                       ;         ;
+; db/lpm_divide_ikm.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/lpm_divide_ikm.tdf                    ;         ;
+; db/lpm_divide_ocm.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/lpm_divide_ocm.tdf                    ;         ;
+; db/sign_div_unsign_dnh.tdf       ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/sign_div_unsign_dnh.tdf               ;         ;
+; db/alt_u_div_eaf.tdf             ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/alt_u_div_eaf.tdf                     ;         ;
++----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -269,23 +269,23 @@ agreement for further details.
 +---------------------------------------------+------------------------------------------------+
 ; Resource                                    ; Usage                                          ;
 +---------------------------------------------+------------------------------------------------+
-; Estimated Total logic elements              ; 2,451                                          ;
+; Estimated Total logic elements              ; 2,361                                          ;
 ;                                             ;                                                ;
-; Total combinational functions               ; 2321                                           ;
+; Total combinational functions               ; 2232                                           ;
 ; Logic element usage by number of LUT inputs ;                                                ;
-;     -- 4 input functions                    ; 952                                            ;
-;     -- 3 input functions                    ; 450                                            ;
-;     -- <=2 input functions                  ; 919                                            ;
+;     -- 4 input functions                    ; 962                                            ;
+;     -- 3 input functions                    ; 378                                            ;
+;     -- <=2 input functions                  ; 892                                            ;
 ;                                             ;                                                ;
 ; Logic elements by mode                      ;                                                ;
-;     -- normal mode                          ; 1797                                           ;
-;     -- arithmetic mode                      ; 524                                            ;
+;     -- normal mode                          ; 1781                                           ;
+;     -- arithmetic mode                      ; 451                                            ;
 ;                                             ;                                                ;
-; Total registers                             ; 483                                            ;
-;     -- Dedicated logic registers            ; 483                                            ;
+; Total registers                             ; 473                                            ;
+;     -- Dedicated logic registers            ; 473                                            ;
 ;     -- I/O registers                        ; 0                                              ;
 ;                                             ;                                                ;
-; I/O pins                                    ; 158                                            ;
+; I/O pins                                    ; 157                                            ;
 ; Total memory bits                           ; 2463744                                        ;
 ;                                             ;                                                ;
 ; Embedded Multiplier 9-bit elements          ; 0                                              ;
@@ -294,9 +294,9 @@ agreement for further details.
 ;     -- PLLs                                 ; 1                                              ;
 ;                                             ;                                                ;
 ; Maximum fan-out node                        ; VGA_Audio_PLL:p1|altpll:altpll_component|_clk0 ;
-; Maximum fan-out                             ; 476                                            ;
-; Total fan-out                               ; 13541                                          ;
-; Average fan-out                             ; 3.92                                           ;
+; Maximum fan-out                             ; 466                                            ;
+; Total fan-out                               ; 13304                                          ;
+; Average fan-out                             ; 3.97                                           ;
 +---------------------------------------------+------------------------------------------------+
 
 
@@ -305,7 +305,7 @@ agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                           ; Entity Name                  ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
-; |skeleton                                    ; 2321 (0)            ; 483 (0)                   ; 2463744     ; 0            ; 0       ; 0         ; 158  ; 0            ; |skeleton                                                                                                                                     ; skeleton                     ; work         ;
+; |skeleton                                    ; 2232 (0)            ; 473 (0)                   ; 2463744     ; 0            ; 0       ; 0         ; 157  ; 0            ; |skeleton                                                                                                                                     ; skeleton                     ; work         ;
 ;    |Hexadecimal_To_Seven_Segment:hex1|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex1                                                                                                   ; Hexadecimal_To_Seven_Segment ; work         ;
 ;    |Hexadecimal_To_Seven_Segment:hex2|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex2                                                                                                   ; Hexadecimal_To_Seven_Segment ; work         ;
 ;    |PS2_Interface:myps2|                     ; 41 (9)              ; 38 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2                                                                                                                 ; PS2_Interface                ; work         ;
@@ -315,7 +315,7 @@ agreement for further details.
 ;    |VGA_Audio_PLL:p1|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1                                                                                                                    ; VGA_Audio_PLL                ; work         ;
 ;       |altpll:altpll_component|              ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1|altpll:altpll_component                                                                                            ; altpll                       ; work         ;
 ;    |lcd:mylcd|                               ; 392 (392)           ; 278 (278)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|lcd:mylcd                                                                                                                           ; lcd                          ; work         ;
-;    |vga_controller:vga_ins|                  ; 1847 (277)          ; 146 (116)                 ; 2463744     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins                                                                                                              ; vga_controller               ; work         ;
+;    |vga_controller:vga_ins|                  ; 1758 (181)          ; 136 (106)                 ; 2463744     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins                                                                                                              ; vga_controller               ; work         ;
 ;       |img_data:img_data_inst|               ; 278 (0)             ; 6 (0)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst                                                                                       ; img_data                     ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 278 (0)             ; 6 (0)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component                                                       ; altsyncram                   ; work         ;
 ;             |altsyncram_3oc1:auto_generated| ; 278 (0)             ; 6 (6)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated                        ; altsyncram_3oc1              ; work         ;
@@ -328,10 +328,10 @@ agreement for further details.
 ;          |lpm_divide_ikm:auto_generated|     ; 215 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0|lpm_divide_ikm:auto_generated                                                                ; lpm_divide_ikm               ; work         ;
 ;             |sign_div_unsign_bnh:divider|    ; 215 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_bnh:divider                                    ; sign_div_unsign_bnh          ; work         ;
 ;                |alt_u_div_9af:divider|       ; 215 (215)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_9af:divider              ; alt_u_div_9af                ; work         ;
-;       |lpm_divide:Mod0|                      ; 741 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0                                                                                              ; lpm_divide                   ; work         ;
-;          |lpm_divide_lcm:auto_generated|     ; 741 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated                                                                ; lpm_divide_lcm               ; work         ;
-;             |sign_div_unsign_anh:divider|    ; 741 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated|sign_div_unsign_anh:divider                                    ; sign_div_unsign_anh          ; work         ;
-;                |alt_u_div_8af:divider|       ; 741 (741)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_8af:divider              ; alt_u_div_8af                ; work         ;
+;       |lpm_divide:Mod0|                      ; 748 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0                                                                                              ; lpm_divide                   ; work         ;
+;          |lpm_divide_ocm:auto_generated|     ; 748 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_ocm:auto_generated                                                                ; lpm_divide_ocm               ; work         ;
+;             |sign_div_unsign_dnh:divider|    ; 748 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_ocm:auto_generated|sign_div_unsign_dnh:divider                                    ; sign_div_unsign_dnh          ; work         ;
+;                |alt_u_div_eaf:divider|       ; 748 (748)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_ocm:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_eaf:divider              ; alt_u_div_eaf                ; work         ;
 ;       |lpm_divide:Mod1|                      ; 292 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1                                                                                              ; lpm_divide                   ; work         ;
 ;          |lpm_divide_mcm:auto_generated|     ; 292 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1|lpm_divide_mcm:auto_generated                                                                ; lpm_divide_mcm               ; work         ;
 ;             |sign_div_unsign_bnh:divider|    ; 292 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1|lpm_divide_mcm:auto_generated|sign_div_unsign_bnh:divider                                    ; sign_div_unsign_bnh          ; work         ;
@@ -412,12 +412,18 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 ; Register name                                                                                                                         ; Reason for Removal                                                                                          ;
 +---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+; vga_controller:vga_ins|x[0,1]                                                                                                         ; Stuck at GND due to stuck port data_in                                                                      ;
+; vga_controller:vga_ins|x[2]                                                                                                           ; Stuck at VCC due to stuck port data_in                                                                      ;
+; vga_controller:vga_ins|x[3,4]                                                                                                         ; Stuck at GND due to stuck port data_in                                                                      ;
+; vga_controller:vga_ins|x[5,6]                                                                                                         ; Stuck at VCC due to stuck port data_in                                                                      ;
+; vga_controller:vga_ins|x[7..9]                                                                                                        ; Stuck at GND due to stuck port data_in                                                                      ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|idle_counter[0..7]                                                                             ; Lost fanout                                                                                                 ;
 ; lcd:mylcd|state2[2..30]                                                                                                               ; Merged with lcd:mylcd|state2[31]                                                                            ;
 ; lcd:mylcd|state1[2..9,11..31]                                                                                                         ; Merged with lcd:mylcd|state1[10]                                                                            ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[1..7]                                    ; Merged with PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[0] ;
 ; lcd:mylcd|state2[31]                                                                                                                  ; Stuck at GND due to stuck port data_in                                                                      ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[0]                                       ; Stuck at GND due to stuck port data_in                                                                      ;
+; vga_controller:vga_ins|ADDRx[0]                                                                                                       ; Lost fanout                                                                                                 ;
 ; lcd:mylcd|state1[10]                                                                                                                  ; Stuck at GND due to stuck port data_in                                                                      ;
 ; lcd:mylcd|line2[10][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
 ; lcd:mylcd|line2[11][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
@@ -477,7 +483,7 @@ Encoding Type:  One-Hot
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|error_communication_timed_out                        ; Stuck at GND due to stuck port data_in                                                                      ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[8]                                       ; Lost fanout                                                                                                 ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_0_IDLE                   ; Lost fanout                                                                                                 ;
-; Total Number of Removed Registers = 184                                                                                               ;                                                                                                             ;
+; Total Number of Removed Registers = 195                                                                                               ;                                                                                                             ;
 +---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
 
@@ -573,12 +579,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 483   ;
+; Total registers                              ; 473   ;
 ; Number of registers using Synchronous Clear  ; 42    ;
-; Number of registers using Synchronous Load   ; 19    ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 318   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 301   ;
+; Number of registers using Clock Enable       ; 340   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -620,46 +626,51 @@ Encoding Type:  One-Hot
 ; lcd:mylcd|line2[3][5]                   ; 3       ;
 ; lcd:mylcd|line2[7][5]                   ; 3       ;
 ; lcd:mylcd|line2[5][5]                   ; 3       ;
-; Total number of inverted registers = 32 ;         ;
+; vga_controller:vga_ins|y[7]             ; 6       ;
+; vga_controller:vga_ins|y[6]             ; 5       ;
+; vga_controller:vga_ins|y[5]             ; 5       ;
+; vga_controller:vga_ins|y[4]             ; 5       ;
+; Total number of inverted registers = 36 ;         ;
 +-----------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[0]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|last_data_received[3]                                                                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[1]                    ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[15][0]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[14][6]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[13][7]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[12][3]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[11][3]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[10][0]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[9][0]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[8][0]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[7][4]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[6][1]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[5][3]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[4][0]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[3][6]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[2][0]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[1][2]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[0][0]                                                                                         ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|lcd:mylcd|ptr[2]                                                                                              ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|lcd:mylcd|cdone                                                                                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|index[0]                                                                                            ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|x[5]                                                                                   ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|y[3]                                                                                   ;
-; 4:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[11]         ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[12] ;
-; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[17]          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[0]                   ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[3]                        ;
-; 38:1               ; 8 bits    ; 200 LEs       ; 200 LEs              ; 0 LEs                  ; Yes        ; |skeleton|lcd:mylcd|lcd_data[6]                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[6]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|last_data_received[6]                                                                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[0]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[15][1]                                                                                       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[14][1]                                                                                       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[13][4]                                                                                       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[12][7]                                                                                       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[11][6]                                                                                       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[10][3]                                                                                       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[9][4]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[8][6]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[7][2]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[6][2]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[5][2]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[4][1]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[3][3]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[2][2]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[1][6]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[0][6]                                                                                        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|lcd:mylcd|ptr[0]                                                                                             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|lcd:mylcd|mstart                                                                                             ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|index[4]                                                                                           ;
+; 4:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[9]         ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[5] ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[6]          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[0]                  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[0]                       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|y[1]                                                                                  ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|y[3]                                                                                  ;
+; 38:1               ; 8 bits    ; 200 LEs       ; 200 LEs              ; 0 LEs                  ; Yes        ; |skeleton|lcd:mylcd|lcd_data[0]                                                                                        ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|y[6]                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
@@ -1795,13 +1806,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name         ; Value          ; Type                                          ;
 +------------------------+----------------+-----------------------------------------------+
 ; LPM_WIDTHN             ; 32             ; Untyped                                       ;
-; LPM_WIDTHD             ; 15             ; Untyped                                       ;
+; LPM_WIDTHD             ; 18             ; Untyped                                       ;
 ; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
 ; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
 ; LPM_PIPELINE           ; 0              ; Untyped                                       ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                       ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                       ;
-; CBXI_PARAMETER         ; lpm_divide_lcm ; Untyped                                       ;
+; CBXI_PARAMETER         ; lpm_divide_ocm ; Untyped                                       ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                       ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                       ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                    ;
@@ -2025,32 +2036,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 158                         ;
-; cycloneiii_ff         ; 483                         ;
+; boundary_port         ; 157                         ;
+; cycloneiii_ff         ; 473                         ;
 ;     CLR               ; 45                          ;
 ;     CLR SCLR          ; 19                          ;
-;     ENA               ; 47                          ;
+;     ENA               ; 86                          ;
 ;     ENA CLR           ; 236                         ;
 ;     ENA CLR SCLR      ; 18                          ;
 ;     SCLR              ; 5                           ;
-;     SLD               ; 19                          ;
-;     plain             ; 94                          ;
+;     plain             ; 64                          ;
 ; cycloneiii_io_obuf    ; 2                           ;
-; cycloneiii_lcell_comb ; 2325                        ;
-;     arith             ; 524                         ;
-;         2 data inputs ; 188                         ;
-;         3 data inputs ; 336                         ;
-;     normal            ; 1801                        ;
-;         0 data inputs ; 42                          ;
-;         1 data inputs ; 25                          ;
-;         2 data inputs ; 668                         ;
-;         3 data inputs ; 114                         ;
-;         4 data inputs ; 952                         ;
+; cycloneiii_lcell_comb ; 2236                        ;
+;     arith             ; 451                         ;
+;         2 data inputs ; 150                         ;
+;         3 data inputs ; 301                         ;
+;     normal            ; 1785                        ;
+;         0 data inputs ; 38                          ;
+;         1 data inputs ; 20                          ;
+;         2 data inputs ; 688                         ;
+;         3 data inputs ; 77                          ;
+;         4 data inputs ; 962                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 328                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 63.30                       ;
-; Average LUT depth     ; 23.27                       ;
+; Max LUT depth         ; 59.40                       ;
+; Average LUT depth     ; 23.21                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2059,7 +2069,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:09     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -2069,59 +2079,59 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Nov 15 17:25:50 2022
+    Info: Processing started: Tue Dec 06 16:25:58 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vga_audio_pll.v
-    Info (12023): Found entity 1: VGA_Audio_PLL File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/VGA_Audio_PLL.v Line: 39
+    Info (12023): Found entity 1: VGA_Audio_PLL File: C:/Users/Owner/Documents/FlappyBird/VGA_Audio_PLL.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file reset_delay.v
-    Info (12023): Found entity 1: Reset_Delay File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/Reset_Delay.v Line: 1
+    Info (12023): Found entity 1: Reset_Delay File: C:/Users/Owner/Documents/FlappyBird/Reset_Delay.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file skeleton.v
-    Info (12023): Found entity 1: skeleton File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 1
+    Info (12023): Found entity 1: skeleton File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_interface.v
-    Info (12023): Found entity 1: PS2_Interface File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/PS2_Interface.v Line: 1
+    Info (12023): Found entity 1: PS2_Interface File: C:/Users/Owner/Documents/FlappyBird/PS2_Interface.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_controller.v
-    Info (12023): Found entity 1: PS2_Controller File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/PS2_Controller.v Line: 9
+    Info (12023): Found entity 1: PS2_Controller File: C:/Users/Owner/Documents/FlappyBird/PS2_Controller.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file processor.v
-    Info (12023): Found entity 1: processor File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/processor.v Line: 1
+    Info (12023): Found entity 1: processor File: C:/Users/Owner/Documents/FlappyBird/processor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
-    Info (12023): Found entity 1: pll File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/pll.v Line: 39
+    Info (12023): Found entity 1: pll File: C:/Users/Owner/Documents/FlappyBird/pll.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file lcd.sv
-    Info (12023): Found entity 1: lcd File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/lcd.sv Line: 1
+    Info (12023): Found entity 1: lcd File: C:/Users/Owner/Documents/FlappyBird/lcd.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file imem.v
-    Info (12023): Found entity 1: imem File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/imem.v Line: 39
+    Info (12023): Found entity 1: imem File: C:/Users/Owner/Documents/FlappyBird/imem.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file hexadecimal_to_seven_segment.v
-    Info (12023): Found entity 1: Hexadecimal_To_Seven_Segment File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/Hexadecimal_To_Seven_Segment.v Line: 9
+    Info (12023): Found entity 1: Hexadecimal_To_Seven_Segment File: C:/Users/Owner/Documents/FlappyBird/Hexadecimal_To_Seven_Segment.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
-    Info (12023): Found entity 1: dmem File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/dmem.v Line: 39
+    Info (12023): Found entity 1: dmem File: C:/Users/Owner/Documents/FlappyBird/dmem.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file altera_up_ps2_data_in.v
-    Info (12023): Found entity 1: Altera_UP_PS2_Data_In File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/Altera_UP_PS2_Data_In.v Line: 10
+    Info (12023): Found entity 1: Altera_UP_PS2_Data_In File: C:/Users/Owner/Documents/FlappyBird/Altera_UP_PS2_Data_In.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file altera_up_ps2_command_out.v
-    Info (12023): Found entity 1: Altera_UP_PS2_Command_Out File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/Altera_UP_PS2_Command_Out.v Line: 10
+    Info (12023): Found entity 1: Altera_UP_PS2_Command_Out File: C:/Users/Owner/Documents/FlappyBird/Altera_UP_PS2_Command_Out.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.v
-    Info (12023): Found entity 1: vga_controller File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 1
+    Info (12023): Found entity 1: vga_controller File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file video_sync_generator.v
-    Info (12023): Found entity 1: video_sync_generator File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/video_sync_generator.v Line: 1
+    Info (12023): Found entity 1: video_sync_generator File: C:/Users/Owner/Documents/FlappyBird/video_sync_generator.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file img_index.v
-    Info (12023): Found entity 1: img_index File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/img_index.v Line: 40
+    Info (12023): Found entity 1: img_index File: C:/Users/Owner/Documents/FlappyBird/img_index.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file img_data.v
-    Info (12023): Found entity 1: img_data File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/img_data.v Line: 39
+    Info (12023): Found entity 1: img_data File: C:/Users/Owner/Documents/FlappyBird/img_data.v Line: 39
 Warning (12019): Can't analyze file -- file output_files/skeleton.v is missing
-Warning (10229): Verilog HDL Expression warning at converter_addr.v(7): truncated literal to match 9 bits File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/converter_addr.v Line: 7
+Warning (10229): Verilog HDL Expression warning at converter_addr.v(7): truncated literal to match 9 bits File: C:/Users/Owner/Documents/FlappyBird/converter_addr.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file converter_addr.v
-    Info (12023): Found entity 1: convert_addr File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/converter_addr.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(53): created implicit net for "inclock" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(84): created implicit net for "DLY_RST" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 84
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(85): created implicit net for "VGA_CTRL_CLK" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 85
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(85): created implicit net for "AUD_CTRL_CLK" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 85
-Warning (10236): Verilog HDL Implicit Net warning at processor.v(29): created implicit net for "debug_data" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/processor.v Line: 29
+    Info (12023): Found entity 1: convert_addr File: C:/Users/Owner/Documents/FlappyBird/converter_addr.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(55): created implicit net for "inclock" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 55
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(86): created implicit net for "DLY_RST" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 86
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(87): created implicit net for "VGA_CTRL_CLK" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 87
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(87): created implicit net for "AUD_CTRL_CLK" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 87
+Warning (10236): Verilog HDL Implicit Net warning at processor.v(29): created implicit net for "debug_data" File: C:/Users/Owner/Documents/FlappyBird/processor.v Line: 29
 Info (12127): Elaborating entity "skeleton" for the top level hierarchy
-Warning (10034): Output port "VGA_SYNC" at skeleton.v(22) has no driver File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 22
-Info (12128): Elaborating entity "pll" for hierarchy "pll:div" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 53
-Info (12128): Elaborating entity "altpll" for hierarchy "pll:div|altpll:altpll_component" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/pll.v Line: 90
-Info (12130): Elaborated megafunction instantiation "pll:div|altpll:altpll_component" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/pll.v Line: 90
-Info (12133): Instantiated megafunction "pll:div|altpll:altpll_component" with the following parameter: File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/pll.v Line: 90
+Warning (10034): Output port "VGA_SYNC" at skeleton.v(24) has no driver File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 24
+Info (12128): Elaborating entity "pll" for hierarchy "pll:div" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 55
+Info (12128): Elaborating entity "altpll" for hierarchy "pll:div|altpll:altpll_component" File: C:/Users/Owner/Documents/FlappyBird/pll.v Line: 90
+Info (12130): Elaborated megafunction instantiation "pll:div|altpll:altpll_component" File: C:/Users/Owner/Documents/FlappyBird/pll.v Line: 90
+Info (12133): Instantiated megafunction "pll:div|altpll:altpll_component" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/pll.v Line: 90
     Info (12134): Parameter "clk0_divide_by" = "5"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "2"
@@ -2173,13 +2183,13 @@ Info (12133): Instantiated megafunction "pll:div|altpll:altpll_component" with t
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
-    Info (12023): Found entity 1: pll_altpll File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/pll_altpll.v Line: 30
-Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:div|altpll:altpll_component|pll_altpll:auto_generated" File: c:/lxy/dukesoftware/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "processor" for hierarchy "processor:myprocessor" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 60
-Info (12128): Elaborating entity "dmem" for hierarchy "processor:myprocessor|dmem:mydmem" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/processor.v Line: 32
-Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/dmem.v Line: 85
-Info (12130): Elaborated megafunction instantiation "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/dmem.v Line: 85
-Info (12133): Instantiated megafunction "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/dmem.v Line: 85
+    Info (12023): Found entity 1: pll_altpll File: C:/Users/Owner/Documents/FlappyBird/db/pll_altpll.v Line: 30
+Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:div|altpll:altpll_component|pll_altpll:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 898
+Info (12128): Elaborating entity "processor" for hierarchy "processor:myprocessor" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 62
+Info (12128): Elaborating entity "dmem" for hierarchy "processor:myprocessor|dmem:mydmem" File: C:/Users/Owner/Documents/FlappyBird/processor.v Line: 32
+Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/Users/Owner/Documents/FlappyBird/dmem.v Line: 85
+Info (12130): Elaborated megafunction instantiation "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/Users/Owner/Documents/FlappyBird/dmem.v Line: 85
+Info (12133): Instantiated megafunction "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/dmem.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "NORMAL"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "dmem.mif"
@@ -2195,12 +2205,12 @@ Info (12133): Instantiated megafunction "processor:myprocessor|dmem:mydmem|altsy
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8vc1.tdf
-    Info (12023): Found entity 1: altsyncram_8vc1 File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_8vc1" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated" File: c:/lxy/dukesoftware/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "imem" for hierarchy "processor:myprocessor|imem:myimem" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/processor.v Line: 38
-Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/imem.v Line: 84
-Info (12130): Elaborated megafunction instantiation "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/imem.v Line: 84
-Info (12133): Instantiated megafunction "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/imem.v Line: 84
+    Info (12023): Found entity 1: altsyncram_8vc1 File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_8vc1" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "imem" for hierarchy "processor:myprocessor|imem:myimem" File: C:/Users/Owner/Documents/FlappyBird/processor.v Line: 38
+Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/Users/Owner/Documents/FlappyBird/imem.v Line: 84
+Info (12130): Elaborated megafunction instantiation "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/Users/Owner/Documents/FlappyBird/imem.v Line: 84
+Info (12133): Instantiated megafunction "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/imem.v Line: 84
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "imem.mif"
@@ -2215,21 +2225,21 @@ Info (12133): Instantiated megafunction "processor:myprocessor|imem:myimem|altsy
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_2m81.tdf
-    Info (12023): Found entity 1: altsyncram_2m81 File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_2m81" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated" File: c:/lxy/dukesoftware/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (287013): Variable or input pin "clocken0" is defined but never used. File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 32
-Info (12128): Elaborating entity "PS2_Interface" for hierarchy "PS2_Interface:myps2" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 63
-Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/PS2_Interface.v Line: 26
-Info (12128): Elaborating entity "Altera_UP_PS2_Data_In" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/PS2_Controller.v Line: 248
-Info (12128): Elaborating entity "Altera_UP_PS2_Command_Out" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/PS2_Controller.v Line: 268
-Info (12128): Elaborating entity "lcd" for hierarchy "lcd:mylcd" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 66
-Info (12128): Elaborating entity "Hexadecimal_To_Seven_Segment" for hierarchy "Hexadecimal_To_Seven_Segment:hex1" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 69
-Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:r0" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 84
-Warning (10230): Verilog HDL assignment warning at Reset_Delay.v(10): truncated value with size 32 to match size of target (20) File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/Reset_Delay.v Line: 10
-Info (12128): Elaborating entity "VGA_Audio_PLL" for hierarchy "VGA_Audio_PLL:p1" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 85
-Info (12128): Elaborating entity "altpll" for hierarchy "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/VGA_Audio_PLL.v Line: 107
-Info (12130): Elaborated megafunction instantiation "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/VGA_Audio_PLL.v Line: 107
-Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_component" with the following parameter: File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/VGA_Audio_PLL.v Line: 107
+    Info (12023): Found entity 1: altsyncram_2m81 File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_2m81" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Warning (287013): Variable or input pin "clocken0" is defined but never used. File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 32
+Info (12128): Elaborating entity "PS2_Interface" for hierarchy "PS2_Interface:myps2" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 65
+Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2" File: C:/Users/Owner/Documents/FlappyBird/PS2_Interface.v Line: 26
+Info (12128): Elaborating entity "Altera_UP_PS2_Data_In" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In" File: C:/Users/Owner/Documents/FlappyBird/PS2_Controller.v Line: 248
+Info (12128): Elaborating entity "Altera_UP_PS2_Command_Out" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out" File: C:/Users/Owner/Documents/FlappyBird/PS2_Controller.v Line: 268
+Info (12128): Elaborating entity "lcd" for hierarchy "lcd:mylcd" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 68
+Info (12128): Elaborating entity "Hexadecimal_To_Seven_Segment" for hierarchy "Hexadecimal_To_Seven_Segment:hex1" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 71
+Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:r0" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 86
+Warning (10230): Verilog HDL assignment warning at Reset_Delay.v(10): truncated value with size 32 to match size of target (20) File: C:/Users/Owner/Documents/FlappyBird/Reset_Delay.v Line: 10
+Info (12128): Elaborating entity "VGA_Audio_PLL" for hierarchy "VGA_Audio_PLL:p1" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 87
+Info (12128): Elaborating entity "altpll" for hierarchy "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/Users/Owner/Documents/FlappyBird/VGA_Audio_PLL.v Line: 107
+Info (12130): Elaborated megafunction instantiation "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/Users/Owner/Documents/FlappyBird/VGA_Audio_PLL.v Line: 107
+Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_component" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/VGA_Audio_PLL.v Line: 107
     Info (12134): Parameter "clk0_divide_by" = "2"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "1"
@@ -2288,17 +2298,19 @@ Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_componen
     Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
-Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 97
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(44): truncated value with size 32 to match size of target (19) File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 44
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(123): truncated value with size 19 to match size of target (10) File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 123
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(124): truncated value with size 19 to match size of target (9) File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 124
-Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 34
-Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(77): truncated value with size 32 to match size of target (10) File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/video_sync_generator.v Line: 77
-Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(80): truncated value with size 32 to match size of target (11) File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/video_sync_generator.v Line: 80
-Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 53
-Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/img_data.v Line: 81
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/img_data.v Line: 81
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/img_data.v Line: 81
+Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 98
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(47): truncated value with size 32 to match size of target (19) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 47
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(96): truncated value with size 32 to match size of target (9) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 96
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(98): truncated value with size 32 to match size of target (9) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 98
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(137): truncated value with size 19 to match size of target (10) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 137
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(138): truncated value with size 19 to match size of target (9) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 138
+Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 37
+Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(77): truncated value with size 32 to match size of target (10) File: C:/Users/Owner/Documents/FlappyBird/video_sync_generator.v Line: 77
+Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(80): truncated value with size 32 to match size of target (11) File: C:/Users/Owner/Documents/FlappyBird/video_sync_generator.v Line: 80
+Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 56
+Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/Users/Owner/Documents/FlappyBird/img_data.v Line: 81
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/Users/Owner/Documents/FlappyBird/img_data.v Line: 81
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/img_data.v Line: 81
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -2315,18 +2327,18 @@ Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_dat
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3oc1.tdf
-    Info (12023): Found entity 1: altsyncram_3oc1 File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_3oc1.tdf Line: 32
-Info (12128): Elaborating entity "altsyncram_3oc1" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated" File: c:/lxy/dukesoftware/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12023): Found entity 1: altsyncram_3oc1 File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_3oc1.tdf Line: 32
+Info (12128): Elaborating entity "altsyncram_3oc1" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_aaa.tdf
-    Info (12023): Found entity 1: decode_aaa File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/decode_aaa.tdf Line: 23
-Info (12128): Elaborating entity "decode_aaa" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated|decode_aaa:rden_decode" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_3oc1.tdf Line: 40
+    Info (12023): Found entity 1: decode_aaa File: C:/Users/Owner/Documents/FlappyBird/db/decode_aaa.tdf Line: 23
+Info (12128): Elaborating entity "decode_aaa" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated|decode_aaa:rden_decode" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_3oc1.tdf Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_1pb.tdf
-    Info (12023): Found entity 1: mux_1pb File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/mux_1pb.tdf Line: 23
-Info (12128): Elaborating entity "mux_1pb" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated|mux_1pb:mux2" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_3oc1.tdf Line: 41
-Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 116
-Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/img_index.v Line: 82
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/img_index.v Line: 82
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/img_index.v Line: 82
+    Info (12023): Found entity 1: mux_1pb File: C:/Users/Owner/Documents/FlappyBird/db/mux_1pb.tdf Line: 23
+Info (12128): Elaborating entity "mux_1pb" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated|mux_1pb:mux2" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_3oc1.tdf Line: 41
+Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 130
+Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/Users/Owner/Documents/FlappyBird/img_index.v Line: 82
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/Users/Owner/Documents/FlappyBird/img_index.v Line: 82
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/img_index.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -2343,236 +2355,236 @@ Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_in
     Info (12134): Parameter "width_a" = "24"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_enc1.tdf
-    Info (12023): Found entity 1: altsyncram_enc1 File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_enc1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_enc1" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_enc1:auto_generated" File: c:/lxy/dukesoftware/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12023): Found entity 1: altsyncram_enc1 File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_enc1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_enc1" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_enc1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[0]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 36
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[1]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 56
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[2]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 76
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[3]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 96
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[4]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 116
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[5]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 136
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[6]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 156
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[7]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 176
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[8]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 196
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[9]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 216
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[10]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 236
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[11]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 256
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[12]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 276
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[13]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 296
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[14]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 316
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[15]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 336
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[16]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 356
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[17]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 376
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[18]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 396
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[19]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 416
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[20]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 436
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[21]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 456
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[22]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 476
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[23]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 496
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[24]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 516
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[25]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 536
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[26]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 556
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[27]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 576
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[28]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 596
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[29]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 616
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[30]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 636
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[31]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_2m81.tdf Line: 656
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[0]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 37
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[1]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 61
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[2]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 85
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[3]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 109
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[4]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 133
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[5]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 157
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[6]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 181
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[7]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 205
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[8]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 229
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[9]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 253
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[10]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 277
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[11]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 301
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[12]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 325
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[13]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 349
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[14]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 373
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[15]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 397
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[16]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 421
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[17]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 445
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[18]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 469
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[19]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 493
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[20]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 517
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[21]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 541
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[22]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 565
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[23]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 589
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[24]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 613
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[25]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 637
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[26]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 661
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[27]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 685
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[28]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 709
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[29]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 733
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[30]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 757
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[31]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/altsyncram_8vc1.tdf Line: 781
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[0]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 36
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[1]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 56
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[2]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 76
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[3]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 96
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[4]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 116
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[5]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 136
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[6]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 156
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[7]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 176
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[8]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 196
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[9]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 216
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[10]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 236
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[11]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 256
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[12]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 276
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[13]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 296
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[14]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 316
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[15]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 336
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[16]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 356
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[17]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 376
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[18]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 396
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[19]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 416
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[20]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 436
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[21]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 456
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[22]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 476
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[23]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 496
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[24]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 516
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[25]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 536
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[26]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 556
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[27]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 576
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[28]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 596
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[29]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 616
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[30]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 636
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[31]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 656
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[0]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 37
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[1]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 61
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[2]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 85
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[3]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 109
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[4]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 133
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[5]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 157
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[6]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 181
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[7]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 205
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[8]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 229
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[9]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 253
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[10]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 277
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[11]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 301
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[12]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 325
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[13]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 349
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[14]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 373
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[15]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 397
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[16]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 421
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[17]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 445
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[18]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 469
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[19]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 493
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[20]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 517
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[21]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 541
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[22]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 565
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[23]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 589
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[24]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 613
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[25]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 637
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[26]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 661
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[27]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 685
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[28]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 709
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[29]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 733
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[30]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 757
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[31]" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_8vc1.tdf Line: 781
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following PLL node(s):
-        Warning (14320): Synthesized away node "pll:div|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0]" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/pll_altpll.v Line: 78
+        Warning (14320): Synthesized away node "pll:div|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0]" File: C:/Users/Owner/Documents/FlappyBird/db/pll_altpll.v Line: 78
 Info (278001): Inferred 3 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod1" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 123
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Div0" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 124
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod0" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 75
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod1" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 123
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod1" with the following parameter: File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 123
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod1" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 137
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Div0" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 138
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod0" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 88
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod1" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 137
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod1" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 137
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "10"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_mcm.tdf
-    Info (12023): Found entity 1: lpm_divide_mcm File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/lpm_divide_mcm.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_mcm File: C:/Users/Owner/Documents/FlappyBird/db/lpm_divide_mcm.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bnh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_bnh File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/sign_div_unsign_bnh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_bnh File: C:/Users/Owner/Documents/FlappyBird/db/sign_div_unsign_bnh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_9af.tdf
-    Info (12023): Found entity 1: alt_u_div_9af File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/alt_u_div_9af.tdf Line: 27
+    Info (12023): Found entity 1: alt_u_div_9af File: C:/Users/Owner/Documents/FlappyBird/db/alt_u_div_9af.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/add_sub_7pc.tdf Line: 23
+    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/Owner/Documents/FlappyBird/db/add_sub_7pc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/add_sub_8pc.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Div0" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 124
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Div0" with the following parameter: File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 124
+    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/Owner/Documents/FlappyBird/db/add_sub_8pc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Div0" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 138
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Div0" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 138
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "10"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ikm.tdf
-    Info (12023): Found entity 1: lpm_divide_ikm File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/lpm_divide_ikm.tdf Line: 25
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod0" File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 75
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod0" with the following parameter: File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/vga_controller.v Line: 75
+    Info (12023): Found entity 1: lpm_divide_ikm File: C:/Users/Owner/Documents/FlappyBird/db/lpm_divide_ikm.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod0" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 88
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod0" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 88
     Info (12134): Parameter "LPM_WIDTHN" = "32"
-    Info (12134): Parameter "LPM_WIDTHD" = "15"
+    Info (12134): Parameter "LPM_WIDTHD" = "18"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_lcm.tdf
-    Info (12023): Found entity 1: lpm_divide_lcm File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/lpm_divide_lcm.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_anh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_anh File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/sign_div_unsign_anh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_8af.tdf
-    Info (12023): Found entity 1: alt_u_div_8af File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/db/alt_u_div_8af.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ocm.tdf
+    Info (12023): Found entity 1: lpm_divide_ocm File: C:/Users/Owner/Documents/FlappyBird/db/lpm_divide_ocm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_dnh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_dnh File: C:/Users/Owner/Documents/FlappyBird/db/sign_div_unsign_dnh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_eaf.tdf
+    Info (12023): Found entity 1: alt_u_div_eaf File: C:/Users/Owner/Documents/FlappyBird/db/alt_u_div_eaf.tdf Line: 27
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/lcd.sv Line: 48
+Info (13000): Registers with preset signals will power-up high File: C:/Users/Owner/Documents/FlappyBird/lcd.sv Line: 48
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "debug_data_in[0]" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[1]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[2]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[3]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[4]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[5]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[6]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[7]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[8]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[9]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[10]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[11]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[12]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[13]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[14]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[15]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[16]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[17]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[18]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[19]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[20]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[21]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[22]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[23]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[24]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[25]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[26]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[27]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[28]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[29]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[30]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_data_in[31]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_addr[0]" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 37
-    Warning (13410): Pin "debug_addr[1]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 37
-    Warning (13410): Pin "debug_addr[2]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 37
-    Warning (13410): Pin "debug_addr[3]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 37
-    Warning (13410): Pin "debug_addr[4]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 37
-    Warning (13410): Pin "debug_addr[5]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 37
-    Warning (13410): Pin "debug_addr[6]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 37
-    Warning (13410): Pin "debug_addr[7]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 37
-    Warning (13410): Pin "debug_addr[8]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 37
-    Warning (13410): Pin "debug_addr[9]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 37
-    Warning (13410): Pin "debug_addr[10]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 37
-    Warning (13410): Pin "debug_addr[11]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 37
-    Warning (13410): Pin "leds[0]" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "leds[1]" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "leds[2]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "leds[3]" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "leds[4]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "leds[5]" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "leds[6]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "lcd_rw" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 33
-    Warning (13410): Pin "lcd_on" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 33
-    Warning (13410): Pin "lcd_blon" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 33
-    Warning (13410): Pin "seg3[0]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg3[1]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg3[2]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg3[3]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg3[4]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg3[5]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg3[6]" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg4[0]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg4[1]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg4[2]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg4[3]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg4[4]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg4[5]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg4[6]" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg5[0]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg5[1]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg5[2]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg5[3]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg5[4]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg5[5]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg5[6]" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg6[0]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg6[1]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg6[2]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg6[3]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg6[4]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg6[5]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg6[6]" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg7[0]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg7[1]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg7[2]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg7[3]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg7[4]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg7[5]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg7[6]" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg8[0]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg8[1]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg8[2]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg8[3]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg8[4]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg8[5]" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "seg8[6]" is stuck at VCC File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "VGA_SYNC" is stuck at GND File: C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/skeleton.v Line: 22
+    Warning (13410): Pin "debug_data_in[0]" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[1]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[2]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[3]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[4]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[5]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[6]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[7]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[8]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[9]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[10]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[11]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[12]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[13]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[14]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[15]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[16]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[17]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[18]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[19]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[20]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[21]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[22]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[23]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[24]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[25]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[26]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[27]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[28]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[29]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[30]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[31]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 38
+    Warning (13410): Pin "debug_addr[0]" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[1]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[2]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[3]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[4]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[5]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[6]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[7]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[8]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[9]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[10]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[11]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 39
+    Warning (13410): Pin "leds[0]" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 36
+    Warning (13410): Pin "leds[1]" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 36
+    Warning (13410): Pin "leds[2]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 36
+    Warning (13410): Pin "leds[3]" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 36
+    Warning (13410): Pin "leds[4]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 36
+    Warning (13410): Pin "leds[5]" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 36
+    Warning (13410): Pin "leds[6]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 36
+    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 36
+    Warning (13410): Pin "lcd_rw" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 35
+    Warning (13410): Pin "lcd_on" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 35
+    Warning (13410): Pin "lcd_blon" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 35
+    Warning (13410): Pin "seg3[0]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg3[1]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg3[2]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg3[3]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg3[4]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg3[5]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg3[6]" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[0]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[1]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[2]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[3]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[4]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[5]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[6]" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[0]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[1]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[2]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[3]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[4]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[5]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[6]" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[0]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[1]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[2]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[3]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[4]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[5]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[6]" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[0]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[1]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[2]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[3]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[4]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[5]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[6]" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[0]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[1]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[2]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[3]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[4]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[5]" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[6]" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
+    Warning (13410): Pin "VGA_SYNC" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 24
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 17 registers lost all their fanouts during netlist optimizations.
+Info (17049): 18 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (15897): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: c:/lxy/dukesoftware/quartus/libraries/megafunctions/altpll.tdf Line: 921
-Warning (15899): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: c:/lxy/dukesoftware/quartus/libraries/megafunctions/altpll.tdf Line: 921
-Info (21057): Implemented 2949 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
+Warning (15897): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 921
+Warning (15899): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 921
+Info (21057): Implemented 2858 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
     Info (21059): Implemented 150 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 2462 logic cells
+    Info (21061): Implemented 2372 logic cells
     Info (21064): Implemented 328 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 187 warnings
-    Info: Peak virtual memory: 4813 megabytes
-    Info: Processing ended: Tue Nov 15 17:26:23 2022
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:00:53
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 189 warnings
+    Info: Peak virtual memory: 4803 megabytes
+    Info: Processing ended: Tue Dec 06 16:26:25 2022
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:48
 
 

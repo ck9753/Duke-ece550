@@ -154,9 +154,8 @@ VGA_B[6] << vga_controller:vga_ins.b_data
 VGA_B[7] << vga_controller:vga_ins.b_data
 CLOCK_50 => clock.IN6
 up => up.IN1
-down => down.IN1
-left => left.IN1
-right => right.IN1
+reset => reset.IN1
+start => start.IN1
 
 
 |skeleton|pll:div
@@ -3770,12 +3769,36 @@ r_data[4] <= bgr_data[4].DB_MAX_OUTPUT_PORT_TYPE
 r_data[5] <= bgr_data[5].DB_MAX_OUTPUT_PORT_TYPE
 r_data[6] <= bgr_data[6].DB_MAX_OUTPUT_PORT_TYPE
 r_data[7] <= bgr_data[7].DB_MAX_OUTPUT_PORT_TYPE
-up => Add6.IN9
-down => Add5.IN18
-down => Add7.IN9
-left => Add3.IN10
-left => Add2.IN10
-right => Add4.IN10
+up => y.OUTPUTSELECT
+up => y.OUTPUTSELECT
+up => y.OUTPUTSELECT
+up => y.OUTPUTSELECT
+up => y.OUTPUTSELECT
+up => y.OUTPUTSELECT
+up => y.OUTPUTSELECT
+up => y.OUTPUTSELECT
+up => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => trigger.OUTPUTSELECT
+reset => x[0].ENA
+reset => x[1].ENA
+reset => x[2].ENA
+reset => x[3].ENA
+reset => x[4].ENA
+reset => x[5].ENA
+reset => x[6].ENA
+reset => x[7].ENA
+reset => x[8].ENA
+reset => x[9].ENA
+start => trigger.OUTPUTSELECT
 
 
 |skeleton|vga_controller:vga_ins|video_sync_generator:LTM_ins

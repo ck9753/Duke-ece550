@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/Users/13902/Desktop/550D/Projects/recitation/lab8/reci8/PS2_skeleton_restored/output_files/") File("skeleton.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Users/Owner/Documents/FlappyBird/output_files/") File("skeleton.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
