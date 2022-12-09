@@ -222,18 +222,6 @@
 				{
 					"name" : "resetn",
 					"strict" : false
-				},
-				{
-					"name" : "reset",
-					"strict" : false
-				},
-				{
-					"name" : "up",
-					"strict" : false
-				},
-				{
-					"name" : "start",
-					"strict" : false
 				}
 			]
 		}

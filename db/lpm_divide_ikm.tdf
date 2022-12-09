@@ -18,7 +18,7 @@
 --  agreement for further details.
 
 
-FUNCTION sign_div_unsign_bnh (denominator[9..0], numerator[18..0])
+FUNCTION sign_div_unsign_anh (denominator[9..0], numerator[18..0])
 RETURNS ( quotient[18..0], remainder[9..0]);
 
 --synthesis_resources = 
@@ -30,7 +30,7 @@ SUBDESIGN lpm_divide_ikm
 	remain[9..0]	:	output;
 ) 
 VARIABLE 
-	divider : sign_div_unsign_bnh;
+	divider : sign_div_unsign_anh;
 	numer_tmp[18..0]	: WIRE;
 
 BEGIN 
