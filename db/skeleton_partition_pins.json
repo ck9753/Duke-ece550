@@ -222,6 +222,21 @@
 				{
 					"name" : "resetn",
 					"strict" : false
+<<<<<<< HEAD
+=======
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "up",
+					"strict" : false
+>>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e
 				}
 			]
 		}

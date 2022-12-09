@@ -1,5 +1,9 @@
 Flow report for skeleton
+<<<<<<< HEAD
 Fri Dec 09 16:55:06 2022
+=======
+Fri Dec 09 16:38:35 2022
+>>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,18 +45,30 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Flow Status                        ; Successful - Fri Dec 09 16:55:06 2022       ;
+=======
+; Flow Status                        ; Successful - Fri Dec 09 16:38:35 2022       ;
+>>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
+<<<<<<< HEAD
 ; Total logic elements               ; 2,484 / 114,480 ( 2 % )                     ;
 ;     Total combinational functions  ; 2,416 / 114,480 ( 2 % )                     ;
 ;     Dedicated logic registers      ; 488 / 114,480 ( < 1 % )                     ;
 ; Total registers                    ; 488                                         ;
 ; Total pins                         ; 154 / 529 ( 29 % )                          ;
+=======
+; Total logic elements               ; 2,496 / 114,480 ( 2 % )                     ;
+;     Total combinational functions  ; 2,417 / 114,480 ( 2 % )                     ;
+;     Dedicated logic registers      ; 488 / 114,480 ( < 1 % )                     ;
+; Total registers                    ; 488                                         ;
+; Total pins                         ; 157 / 529 ( 30 % )                          ;
+>>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,464,768 / 3,981,312 ( 62 % )              ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -65,7 +81,11 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD
 ; Start date & time ; 12/09/2022 16:52:28 ;
+=======
+; Start date & time ; 12/09/2022 16:35:20 ;
+>>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e
 ; Main task         ; Compilation         ;
 ; Revision Name     ; skeleton            ;
 +-------------------+---------------------+
@@ -76,7 +96,11 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+<<<<<<< HEAD
 ; COMPILER_SIGNATURE_ID               ; 218381598438568.167062274809412        ; --            ; --          ; --             ;
+=======
+; COMPILER_SIGNATURE_ID               ; 26516771610538.167062171919232         ; --            ; --          ; --             ;
+>>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
@@ -103,12 +127,21 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis      ; 00:00:43     ; 1.0                     ; 4807 MB             ; 00:00:58                           ;
 ; Fitter                    ; 00:01:16     ; 1.0                     ; 5503 MB             ; 00:01:26                           ;
 ; Assembler                 ; 00:00:08     ; 1.0                     ; 4711 MB             ; 00:00:06                           ;
 ; TimeQuest Timing Analyzer ; 00:00:10     ; 1.4                     ; 4900 MB             ; 00:00:09                           ;
 ; EDA Netlist Writer        ; 00:00:08     ; 1.0                     ; 4707 MB             ; 00:00:07                           ;
 ; Total                     ; 00:02:25     ; --                      ; --                  ; 00:02:46                           ;
+=======
+; Analysis & Synthesis      ; 00:00:47     ; 1.0                     ; 4816 MB             ; 00:01:23                           ;
+; Fitter                    ; 00:01:43     ; 1.0                     ; 5446 MB             ; 00:02:22                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4712 MB             ; 00:00:11                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.2                     ; 4871 MB             ; 00:00:10                           ;
+; EDA Netlist Writer        ; 00:00:10     ; 1.0                     ; 4711 MB             ; 00:00:10                           ;
+; Total                     ; 00:03:02     ; --                      ; --                  ; 00:04:16                           ;
+>>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

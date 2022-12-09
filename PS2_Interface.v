@@ -6,6 +6,7 @@ module PS2_Interface(inclock, resetn, ps2_clock, ps2_data, ps2_key_data, ps2_key
 	output 	[7:0] 	ps2_key_data;
 	output 	[7:0] 	last_data_received;
 
+
 	// Internal Registers
 	reg			[7:0]	last_data_received;
 	reg 			[7:0] temp_ps2_key_data;
@@ -39,4 +40,6 @@ module PS2_Interface(inclock, resetn, ps2_clock, ps2_data, ps2_key_data, ps2_key
 						.received_data_en	(ps2_key_pressed)
 						);
 
+						
+						
 endmodule

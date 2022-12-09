@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 start_full_compilation:s:00:02:41
 start_analysis_synthesis:s:00:00:46-start_full_compilation
 start_analysis_elaboration:s-start_full_compilation
@@ -5,3 +6,12 @@ start_fitter:s:00:01:22-start_full_compilation
 start_assembler:s:00:00:09-start_full_compilation
 start_timing_analyzer:s:00:00:14-start_full_compilation
 start_eda_netlist_writer:s:00:00:10-start_full_compilation
+=======
+start_full_compilation:s:00:03:19
+start_analysis_synthesis:s:00:00:51-start_full_compilation
+start_analysis_elaboration:s-start_full_compilation
+start_fitter:s:00:01:51-start_full_compilation
+start_assembler:s:00:00:12-start_full_compilation
+start_timing_analyzer:s:00:00:13-start_full_compilation
+start_eda_netlist_writer:s:00:00:12-start_full_compilation
+>>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e

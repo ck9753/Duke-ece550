@@ -3766,6 +3766,12 @@ r_data[4] <= bgr_data[4].DB_MAX_OUTPUT_PORT_TYPE
 r_data[5] <= bgr_data[5].DB_MAX_OUTPUT_PORT_TYPE
 r_data[6] <= bgr_data[6].DB_MAX_OUTPUT_PORT_TYPE
 r_data[7] <= bgr_data[7].DB_MAX_OUTPUT_PORT_TYPE
+<<<<<<< HEAD
+=======
+up => always1.IN1
+reset => always1.IN1
+start => always1.IN1
+>>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e
 data[0] => Equal0.IN2
 data[0] => Equal1.IN4
 data[0] => Equal4.IN2
