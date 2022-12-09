@@ -95,7 +95,8 @@ module skeleton(resetn,
 								 .r_data(VGA_R),
 								 .up(up),
 								 .reset(reset),
-								 .start(start));
+								 .start(start),
+								 .data(ps2_out));
 	
 	
 endmodule

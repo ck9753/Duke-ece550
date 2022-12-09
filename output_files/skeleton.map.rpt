@@ -1,5 +1,5 @@
 Analysis & Synthesis report for skeleton
-Fri Dec 09 14:57:56 2022
+Fri Dec 09 16:36:07 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -23,41 +23,45 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
  15. Removed Registers Triggering Further Register Optimizations
  16. General Register Statistics
  17. Inverted Register Statistics
- 18. Multiplexer Restructuring Statistics (Restructuring Performed)
- 19. Source assignments for processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated
- 20. Source assignments for processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated
- 21. Source assignments for vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated
- 22. Source assignments for vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_enc1:auto_generated
- 23. Parameter Settings for User Entity Instance: pll:div|altpll:altpll_component
- 24. Parameter Settings for User Entity Instance: processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component
- 25. Parameter Settings for User Entity Instance: processor:myprocessor|imem:myimem|altsyncram:altsyncram_component
- 26. Parameter Settings for User Entity Instance: PS2_Interface:myps2|PS2_Controller:PS2
- 27. Parameter Settings for User Entity Instance: PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out
- 28. Parameter Settings for User Entity Instance: VGA_Audio_PLL:p1|altpll:altpll_component
- 29. Parameter Settings for User Entity Instance: vga_controller:vga_ins|video_sync_generator:LTM_ins
- 30. Parameter Settings for User Entity Instance: vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component
- 31. Parameter Settings for User Entity Instance: vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component
- 32. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Mod1
- 33. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Div0
- 34. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Mod0
- 35. altpll Parameter Settings by Entity Instance
- 36. altsyncram Parameter Settings by Entity Instance
- 37. Port Connectivity Checks: "VGA_Audio_PLL:p1"
- 38. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex8"
- 39. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex7"
- 40. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex6"
- 41. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex5"
- 42. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex4"
- 43. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex3"
- 44. Port Connectivity Checks: "lcd:mylcd"
- 45. Port Connectivity Checks: "PS2_Interface:myps2|PS2_Controller:PS2"
- 46. Port Connectivity Checks: "PS2_Interface:myps2"
- 47. Port Connectivity Checks: "processor:myprocessor|imem:myimem"
- 48. Port Connectivity Checks: "processor:myprocessor|dmem:mydmem"
- 49. Port Connectivity Checks: "pll:div"
- 50. Post-Synthesis Netlist Statistics for Top Partition
- 51. Elapsed Time Per Partition
- 52. Analysis & Synthesis Messages
+ 18. Registers Packed Into Inferred Megafunctions
+ 19. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 20. Source assignments for processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated
+ 21. Source assignments for processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated
+ 22. Source assignments for vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated
+ 23. Source assignments for vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_enc1:auto_generated
+ 24. Source assignments for PS2_Interface:myps2|altsyncram:Selector3_rtl_0|altsyncram_tqv:auto_generated
+ 25. Parameter Settings for User Entity Instance: pll:div|altpll:altpll_component
+ 26. Parameter Settings for User Entity Instance: processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component
+ 27. Parameter Settings for User Entity Instance: processor:myprocessor|imem:myimem|altsyncram:altsyncram_component
+ 28. Parameter Settings for User Entity Instance: PS2_Interface:myps2|PS2_Controller:PS2
+ 29. Parameter Settings for User Entity Instance: PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out
+ 30. Parameter Settings for User Entity Instance: VGA_Audio_PLL:p1|altpll:altpll_component
+ 31. Parameter Settings for User Entity Instance: vga_controller:vga_ins|video_sync_generator:LTM_ins
+ 32. Parameter Settings for User Entity Instance: vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component
+ 33. Parameter Settings for User Entity Instance: vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component
+ 34. Parameter Settings for Inferred Entity Instance: PS2_Interface:myps2|altsyncram:Selector3_rtl_0
+ 35. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Mod1
+ 36. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Div0
+ 37. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Mod0
+ 38. altpll Parameter Settings by Entity Instance
+ 39. altsyncram Parameter Settings by Entity Instance
+ 40. Port Connectivity Checks: "VGA_Audio_PLL:p1"
+ 41. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex8"
+ 42. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex7"
+ 43. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex6"
+ 44. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex5"
+ 45. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex4"
+ 46. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex3"
+ 47. Port Connectivity Checks: "lcd:mylcd"
+ 48. Port Connectivity Checks: "PS2_Interface:myps2|PS2_Controller:PS2"
+ 49. Port Connectivity Checks: "PS2_Interface:myps2"
+ 50. Port Connectivity Checks: "processor:myprocessor|imem:myimem"
+ 51. Port Connectivity Checks: "processor:myprocessor|dmem:mydmem"
+ 52. Port Connectivity Checks: "pll:div"
+ 53. Post-Synthesis Netlist Statistics for Top Partition
+ 54. Elapsed Time Per Partition
+ 55. Analysis & Synthesis Messages
+ 56. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -84,18 +88,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 09 14:57:56 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 09 16:36:07 2022       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,534                                       ;
-;     Total combinational functions  ; 2,404                                       ;
-;     Dedicated logic registers      ; 487                                         ;
-; Total registers                    ; 487                                         ;
+; Total logic elements               ; 2,548                                       ;
+;     Total combinational functions  ; 2,417                                       ;
+;     Dedicated logic registers      ; 488                                         ;
+; Total registers                    ; 488                                         ;
 ; Total pins                         ; 157                                         ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 2,463,744                                   ;
+; Total memory bits                  ; 2,464,768                                   ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 1                                           ;
 +------------------------------------+---------------------------------------------+
@@ -250,6 +254,7 @@ agreement for further details.
 ; db/decode_aaa.tdf                ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/decode_aaa.tdf                        ;         ;
 ; db/mux_1pb.tdf                   ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/mux_1pb.tdf                           ;         ;
 ; db/altsyncram_enc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/altsyncram_enc1.tdf                   ;         ;
+; db/altsyncram_tqv.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/Users/Owner/Documents/FlappyBird/db/altsyncram_tqv.tdf                    ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_divide.tdf        ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/abs_divider.inc       ;         ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/sign_div_unsign.inc   ;         ;
@@ -270,24 +275,24 @@ agreement for further details.
 +---------------------------------------------+------------------------------------------------+
 ; Resource                                    ; Usage                                          ;
 +---------------------------------------------+------------------------------------------------+
-; Estimated Total logic elements              ; 2,534                                          ;
+; Estimated Total logic elements              ; 2,548                                          ;
 ;                                             ;                                                ;
-; Total combinational functions               ; 2404                                           ;
+; Total combinational functions               ; 2417                                           ;
 ; Logic element usage by number of LUT inputs ;                                                ;
-;     -- 4 input functions                    ; 1025                                           ;
-;     -- 3 input functions                    ; 427                                            ;
-;     -- <=2 input functions                  ; 952                                            ;
+;     -- 4 input functions                    ; 1062                                           ;
+;     -- 3 input functions                    ; 439                                            ;
+;     -- <=2 input functions                  ; 916                                            ;
 ;                                             ;                                                ;
 ; Logic elements by mode                      ;                                                ;
-;     -- normal mode                          ; 1882                                           ;
+;     -- normal mode                          ; 1895                                           ;
 ;     -- arithmetic mode                      ; 522                                            ;
 ;                                             ;                                                ;
-; Total registers                             ; 487                                            ;
-;     -- Dedicated logic registers            ; 487                                            ;
+; Total registers                             ; 488                                            ;
+;     -- Dedicated logic registers            ; 488                                            ;
 ;     -- I/O registers                        ; 0                                              ;
 ;                                             ;                                                ;
 ; I/O pins                                    ; 157                                            ;
-; Total memory bits                           ; 2463744                                        ;
+; Total memory bits                           ; 2464768                                        ;
 ;                                             ;                                                ;
 ; Embedded Multiplier 9-bit elements          ; 0                                              ;
 ;                                             ;                                                ;
@@ -296,8 +301,8 @@ agreement for further details.
 ;                                             ;                                                ;
 ; Maximum fan-out node                        ; VGA_Audio_PLL:p1|altpll:altpll_component|_clk0 ;
 ; Maximum fan-out                             ; 480                                            ;
-; Total fan-out                               ; 13855                                          ;
-; Average fan-out                             ; 3.92                                           ;
+; Total fan-out                               ; 14001                                          ;
+; Average fan-out                             ; 3.94                                           ;
 +---------------------------------------------+------------------------------------------------+
 
 
@@ -306,17 +311,19 @@ agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                           ; Entity Name                  ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
-; |skeleton                                    ; 2404 (0)            ; 487 (0)                   ; 2463744     ; 0            ; 0       ; 0         ; 157  ; 0            ; |skeleton                                                                                                                                     ; skeleton                     ; work         ;
-;    |Hexadecimal_To_Seven_Segment:hex1|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex1                                                                                                   ; Hexadecimal_To_Seven_Segment ; work         ;
-;    |Hexadecimal_To_Seven_Segment:hex2|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex2                                                                                                   ; Hexadecimal_To_Seven_Segment ; work         ;
-;    |PS2_Interface:myps2|                     ; 41 (9)              ; 38 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2                                                                                                                 ; PS2_Interface                ; work         ;
+; |skeleton                                    ; 2417 (0)            ; 488 (0)                   ; 2464768     ; 0            ; 0       ; 0         ; 157  ; 0            ; |skeleton                                                                                                                                     ; skeleton                     ; work         ;
+;    |Hexadecimal_To_Seven_Segment:hex1|       ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex1                                                                                                   ; Hexadecimal_To_Seven_Segment ; work         ;
+;    |Hexadecimal_To_Seven_Segment:hex2|       ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex2                                                                                                   ; Hexadecimal_To_Seven_Segment ; work         ;
+;    |PS2_Interface:myps2|                     ; 42 (10)             ; 39 (9)                    ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2                                                                                                                 ; PS2_Interface                ; work         ;
 ;       |PS2_Controller:PS2|                   ; 32 (7)              ; 30 (5)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2                                                                                              ; PS2_Controller               ; work         ;
 ;          |Altera_UP_PS2_Data_In:PS2_Data_In| ; 25 (25)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In                                                            ; Altera_UP_PS2_Data_In        ; work         ;
+;       |altsyncram:Selector3_rtl_0|           ; 0 (0)               ; 0 (0)                     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2|altsyncram:Selector3_rtl_0                                                                                      ; altsyncram                   ; work         ;
+;          |altsyncram_tqv:auto_generated|     ; 0 (0)               ; 0 (0)                     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2|altsyncram:Selector3_rtl_0|altsyncram_tqv:auto_generated                                                        ; altsyncram_tqv               ; work         ;
 ;    |Reset_Delay:r0|                          ; 27 (27)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Reset_Delay:r0                                                                                                                      ; Reset_Delay                  ; work         ;
 ;    |VGA_Audio_PLL:p1|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1                                                                                                                    ; VGA_Audio_PLL                ; work         ;
 ;       |altpll:altpll_component|              ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1|altpll:altpll_component                                                                                            ; altpll                       ; work         ;
-;    |lcd:mylcd|                               ; 392 (392)           ; 278 (278)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|lcd:mylcd                                                                                                                           ; lcd                          ; work         ;
-;    |vga_controller:vga_ins|                  ; 1930 (353)          ; 150 (120)                 ; 2463744     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins                                                                                                              ; vga_controller               ; work         ;
+;    |lcd:mylcd|                               ; 391 (391)           ; 278 (278)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|lcd:mylcd                                                                                                                           ; lcd                          ; work         ;
+;    |vga_controller:vga_ins|                  ; 1937 (360)          ; 150 (120)                 ; 2463744     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins                                                                                                              ; vga_controller               ; work         ;
 ;       |img_data:img_data_inst|               ; 278 (0)             ; 6 (0)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst                                                                                       ; img_data                     ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 278 (0)             ; 6 (0)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component                                                       ; altsyncram                   ; work         ;
 ;             |altsyncram_3oc1:auto_generated| ; 278 (0)             ; 6 (6)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated                        ; altsyncram_3oc1              ; work         ;
@@ -342,14 +349,15 @@ agreement for further details.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                    ;
-+---------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+---------------------+
-; Name                                                                                                                      ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF                 ;
-+---------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+---------------------+
-; vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated|ALTSYNCRAM   ; M9K  ; ROM  ; 307200       ; 8            ; --           ; --           ; 2457600 ; reci8_img_data.mif  ;
-; vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_enc1:auto_generated|ALTSYNCRAM ; M9K  ; ROM  ; 256          ; 24           ; --           ; --           ; 6144    ; reci8_img_index.mif ;
-+---------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+---------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                           ;
++---------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+----------------------------+
+; Name                                                                                                                      ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF                        ;
++---------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+----------------------------+
+; PS2_Interface:myps2|altsyncram:Selector3_rtl_0|altsyncram_tqv:auto_generated|ALTSYNCRAM                                   ; AUTO ; ROM  ; 256          ; 4            ; --           ; --           ; 1024    ; skeleton.skeleton0.rtl.mif ;
+; vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated|ALTSYNCRAM   ; M9K  ; ROM  ; 307200       ; 8            ; --           ; --           ; 2457600 ; reci8_img_data.mif         ;
+; vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_enc1:auto_generated|ALTSYNCRAM ; M9K  ; ROM  ; 256          ; 24           ; --           ; --           ; 6144    ; reci8_img_index.mif        ;
++---------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+----------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -438,10 +446,19 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; vga_controller:vga_ins|x[7..9]                                                                                                        ; Stuck at GND due to stuck port data_in                                                                      ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|idle_counter[0..7]                                                                             ; Lost fanout                                                                                                 ;
 ; lcd:mylcd|state2[2..30]                                                                                                               ; Merged with lcd:mylcd|state2[31]                                                                            ;
+; PS2_Interface:myps2|temp_ps2_key_data[0]                                                                                              ; Merged with PS2_Interface:myps2|last_data_received[0]                                                       ;
+; PS2_Interface:myps2|temp_ps2_key_data[3]                                                                                              ; Merged with PS2_Interface:myps2|last_data_received[3]                                                       ;
+; PS2_Interface:myps2|temp_ps2_key_data[2]                                                                                              ; Merged with PS2_Interface:myps2|last_data_received[2]                                                       ;
+; PS2_Interface:myps2|temp_ps2_key_data[1]                                                                                              ; Merged with PS2_Interface:myps2|last_data_received[1]                                                       ;
+; PS2_Interface:myps2|temp_ps2_key_data[4]                                                                                              ; Merged with PS2_Interface:myps2|last_data_received[4]                                                       ;
+; PS2_Interface:myps2|temp_ps2_key_data[7]                                                                                              ; Merged with PS2_Interface:myps2|last_data_received[7]                                                       ;
+; PS2_Interface:myps2|temp_ps2_key_data[6]                                                                                              ; Merged with PS2_Interface:myps2|last_data_received[6]                                                       ;
+; PS2_Interface:myps2|temp_ps2_key_data[5]                                                                                              ; Merged with PS2_Interface:myps2|last_data_received[5]                                                       ;
 ; lcd:mylcd|state1[2..9,11..31]                                                                                                         ; Merged with lcd:mylcd|state1[10]                                                                            ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[1..7]                                    ; Merged with PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[0] ;
 ; lcd:mylcd|state2[31]                                                                                                                  ; Stuck at GND due to stuck port data_in                                                                      ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[0]                                       ; Stuck at GND due to stuck port data_in                                                                      ;
+; PS2_Interface:myps2|last_data_received[0..2,4]                                                                                        ; Lost fanout                                                                                                 ;
 ; lcd:mylcd|state1[10]                                                                                                                  ; Stuck at GND due to stuck port data_in                                                                      ;
 ; lcd:mylcd|line2[10][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
 ; lcd:mylcd|line2[11][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
@@ -475,6 +492,9 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; lcd:mylcd|line1[12][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
 ; lcd:mylcd|line1[15][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
 ; lcd:mylcd|line1[14][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
+; PS2_Interface:myps2|last_data_received[1]~5                                                                                           ; Merged with PS2_Interface:myps2|last_data_received[0]~2                                                     ;
+; PS2_Interface:myps2|last_data_received[2]~8                                                                                           ; Merged with PS2_Interface:myps2|last_data_received[0]~2                                                     ;
+; PS2_Interface:myps2|last_data_received[4]~11                                                                                          ; Merged with PS2_Interface:myps2|last_data_received[0]~2                                                     ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|s_ps2_transceiver~2                                                                            ; Lost fanout                                                                                                 ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|s_ps2_transceiver~3                                                                            ; Lost fanout                                                                                                 ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter~2                                  ; Lost fanout                                                                                                 ;
@@ -501,7 +521,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|error_communication_timed_out                        ; Stuck at GND due to stuck port data_in                                                                      ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[8]                                       ; Lost fanout                                                                                                 ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_0_IDLE                   ; Lost fanout                                                                                                 ;
-; Total Number of Removed Registers = 203                                                                                               ;                                                                                                             ;
+; Total Number of Removed Registers = 218                                                                                               ;                                                                                                             ;
 +---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
 
@@ -551,6 +571,10 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ;                                                                                                                                       ;                           ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|error_communication_timed_out,                    ;
 ;                                                                                                                                       ;                           ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[8],                                   ;
 ;                                                                                                                                       ;                           ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_0_IDLE                ;
+; vga_controller:vga_ins|y_pipe[0]                                                                                                      ; Stuck at GND              ; PS2_Interface:myps2|last_data_received[0],                                                                                         ;
+;                                                                                                                                       ; due to stuck port data_in ; PS2_Interface:myps2|last_data_received[1],                                                                                         ;
+;                                                                                                                                       ;                           ; PS2_Interface:myps2|last_data_received[2],                                                                                         ;
+;                                                                                                                                       ;                           ; PS2_Interface:myps2|last_data_received[4]                                                                                          ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|idle_counter[3]                                                                                ; Lost Fanouts              ; PS2_Interface:myps2|PS2_Controller:PS2|idle_counter[4],                                                                            ;
 ;                                                                                                                                       ;                           ; PS2_Interface:myps2|PS2_Controller:PS2|idle_counter[5],                                                                            ;
 ;                                                                                                                                       ;                           ; PS2_Interface:myps2|PS2_Controller:PS2|idle_counter[6],                                                                            ;
@@ -597,12 +621,12 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 487   ;
+; Total registers                              ; 488   ;
 ; Number of registers using Synchronous Clear  ; 42    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 318   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 352   ;
+; Number of registers using Clock Enable       ; 348   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -658,45 +682,57 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +-----------------------------------------+---------+
 
 
++-------------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                              ;
++----------------------------------------------+-------------------------------------+------+
+; Register Name                                ; Megafunction                        ; Type ;
++----------------------------------------------+-------------------------------------+------+
+; PS2_Interface:myps2|last_data_received[0]~1  ; PS2_Interface:myps2|Selector3_rtl_0 ; ROM  ;
+; PS2_Interface:myps2|last_data_received[1]~4  ; PS2_Interface:myps2|Selector3_rtl_0 ; ROM  ;
+; PS2_Interface:myps2|last_data_received[2]~7  ; PS2_Interface:myps2|Selector3_rtl_0 ; ROM  ;
+; PS2_Interface:myps2|last_data_received[4]~10 ; PS2_Interface:myps2|Selector3_rtl_0 ; ROM  ;
++----------------------------------------------+-------------------------------------+------+
+
+
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[5]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|last_data_received[6]                                                                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[7]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[15][3]                                                                                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[14][7]                                                                                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[13][6]                                                                                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[12][0]                                                                                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[1]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[0]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[15][0]                                                                                       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[14][4]                                                                                       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[13][0]                                                                                       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[12][6]                                                                                       ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[11][6]                                                                                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[10][4]                                                                                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[9][6]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[8][6]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[7][4]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[6][4]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[10][2]                                                                                       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[9][3]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[8][4]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[7][1]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[6][0]                                                                                        ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[5][2]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[4][6]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[3][7]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[2][7]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[1][7]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[0][7]                                                                                        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|lcd:mylcd|ptr[0]                                                                                             ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|lcd:mylcd|cdone                                                                                              ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[4][4]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[3][0]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[2][0]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[1][6]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[0][4]                                                                                        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|lcd:mylcd|ptr[3]                                                                                             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|lcd:mylcd|mstart                                                                                             ;
 ; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|x_pipe[8]                                                                             ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|score[0]                                                                              ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|index[1]                                                                                           ;
-; 4:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[5]         ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[3] ;
-; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[7]          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[0]                  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|last_data_received[3]                                                                    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|index[0]                                                                                           ;
+; 4:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[3]         ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[2] ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[18]         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[3]                  ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[3]                       ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|y[0]                                                                                  ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|y[8]                                                                                  ;
-; 7:1                ; 24 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|bgr_data[8]                                                                           ;
-; 38:1               ; 8 bits    ; 200 LEs       ; 200 LEs              ; 0 LEs                  ; Yes        ; |skeleton|lcd:mylcd|lcd_data[1]                                                                                        ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|x_pipe[1]                                                                             ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|y[2]                                                                                  ;
+; 7:1                ; 24 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|bgr_data[21]                                                                          ;
+; 38:1               ; 8 bits    ; 200 LEs       ; 200 LEs              ; 0 LEs                  ; Yes        ; |skeleton|lcd:mylcd|lcd_data[4]                                                                                        ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|x_pipe[9]                                                                             ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|y[6]                                                                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
 
@@ -735,6 +771,15 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +---------------------------------+--------------------+------+-------------------------------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                       ;
 +---------------------------------+--------------------+------+-------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Source assignments for PS2_Interface:myps2|altsyncram:Selector3_rtl_0|altsyncram_tqv:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------+
+; Assignment                      ; Value              ; From ; To                                    ;
++---------------------------------+--------------------+------+---------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                     ;
++---------------------------------+--------------------+------+---------------------------------------+
 
 
 +------------------------------------------------------------------------------+
@@ -1782,6 +1827,67 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: PS2_Interface:myps2|altsyncram:Selector3_rtl_0 ;
++------------------------------------+----------------------------+-------------------------------+
+; Parameter Name                     ; Value                      ; Type                          ;
++------------------------------------+----------------------------+-------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                          ; Untyped                       ;
+; AUTO_CARRY_CHAINS                  ; ON                         ; AUTO_CARRY                    ;
+; IGNORE_CARRY_BUFFERS               ; OFF                        ; IGNORE_CARRY                  ;
+; AUTO_CASCADE_CHAINS                ; ON                         ; AUTO_CASCADE                  ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                        ; IGNORE_CASCADE                ;
+; WIDTH_BYTEENA                      ; 1                          ; Untyped                       ;
+; OPERATION_MODE                     ; ROM                        ; Untyped                       ;
+; WIDTH_A                            ; 4                          ; Untyped                       ;
+; WIDTHAD_A                          ; 8                          ; Untyped                       ;
+; NUMWORDS_A                         ; 256                        ; Untyped                       ;
+; OUTDATA_REG_A                      ; UNREGISTERED               ; Untyped                       ;
+; ADDRESS_ACLR_A                     ; NONE                       ; Untyped                       ;
+; OUTDATA_ACLR_A                     ; NONE                       ; Untyped                       ;
+; WRCONTROL_ACLR_A                   ; NONE                       ; Untyped                       ;
+; INDATA_ACLR_A                      ; NONE                       ; Untyped                       ;
+; BYTEENA_ACLR_A                     ; NONE                       ; Untyped                       ;
+; WIDTH_B                            ; 1                          ; Untyped                       ;
+; WIDTHAD_B                          ; 1                          ; Untyped                       ;
+; NUMWORDS_B                         ; 1                          ; Untyped                       ;
+; INDATA_REG_B                       ; CLOCK1                     ; Untyped                       ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                     ; Untyped                       ;
+; RDCONTROL_REG_B                    ; CLOCK1                     ; Untyped                       ;
+; ADDRESS_REG_B                      ; CLOCK1                     ; Untyped                       ;
+; OUTDATA_REG_B                      ; UNREGISTERED               ; Untyped                       ;
+; BYTEENA_REG_B                      ; CLOCK1                     ; Untyped                       ;
+; INDATA_ACLR_B                      ; NONE                       ; Untyped                       ;
+; WRCONTROL_ACLR_B                   ; NONE                       ; Untyped                       ;
+; ADDRESS_ACLR_B                     ; NONE                       ; Untyped                       ;
+; OUTDATA_ACLR_B                     ; NONE                       ; Untyped                       ;
+; RDCONTROL_ACLR_B                   ; NONE                       ; Untyped                       ;
+; BYTEENA_ACLR_B                     ; NONE                       ; Untyped                       ;
+; WIDTH_BYTEENA_A                    ; 1                          ; Untyped                       ;
+; WIDTH_BYTEENA_B                    ; 1                          ; Untyped                       ;
+; RAM_BLOCK_TYPE                     ; AUTO                       ; Untyped                       ;
+; BYTE_SIZE                          ; 8                          ; Untyped                       ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                  ; Untyped                       ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ       ; Untyped                       ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ       ; Untyped                       ;
+; INIT_FILE                          ; skeleton.skeleton0.rtl.mif ; Untyped                       ;
+; INIT_FILE_LAYOUT                   ; PORT_A                     ; Untyped                       ;
+; MAXIMUM_DEPTH                      ; 0                          ; Untyped                       ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                     ; Untyped                       ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                     ; Untyped                       ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                     ; Untyped                       ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                     ; Untyped                       ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN            ; Untyped                       ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN            ; Untyped                       ;
+; ENABLE_ECC                         ; FALSE                      ; Untyped                       ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                      ; Untyped                       ;
+; WIDTH_ECCSTATUS                    ; 3                          ; Untyped                       ;
+; DEVICE_FAMILY                      ; Cyclone IV E               ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_tqv             ; Untyped                       ;
++------------------------------------+----------------------------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Mod1 ;
 +------------------------+----------------+-----------------------------------------------+
@@ -1881,7 +1987,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+---------------------------------------------------------------------------------+
 ; Name                                      ; Value                                                                           ;
 +-------------------------------------------+---------------------------------------------------------------------------------+
-; Number of entity instances                ; 4                                                                               ;
+; Number of entity instances                ; 5                                                                               ;
 ; Entity Instance                           ; processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component               ;
 ;     -- OPERATION_MODE                     ; SINGLE_PORT                                                                     ;
 ;     -- WIDTH_A                            ; 32                                                                              ;
@@ -1925,6 +2031,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- ADDRESS_REG_B                      ; CLOCK1                                                                          ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                    ;
 ;     -- RAM_BLOCK_TYPE                     ; M9K                                                                             ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                       ;
+; Entity Instance                           ; PS2_Interface:myps2|altsyncram:Selector3_rtl_0                                  ;
+;     -- OPERATION_MODE                     ; ROM                                                                             ;
+;     -- WIDTH_A                            ; 4                                                                               ;
+;     -- NUMWORDS_A                         ; 256                                                                             ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                    ;
+;     -- WIDTH_B                            ; 1                                                                               ;
+;     -- NUMWORDS_B                         ; 1                                                                               ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                          ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                    ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                            ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                       ;
 +-------------------------------------------+---------------------------------------------------------------------------------+
 
@@ -2065,27 +2182,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 157                         ;
-; cycloneiii_ff         ; 487                         ;
+; cycloneiii_ff         ; 488                         ;
 ;     CLR               ; 45                          ;
 ;     CLR SCLR          ; 19                          ;
-;     ENA               ; 98                          ;
+;     ENA               ; 94                          ;
 ;     ENA CLR           ; 236                         ;
 ;     ENA CLR SCLR      ; 18                          ;
 ;     SCLR              ; 5                           ;
-;     plain             ; 66                          ;
+;     plain             ; 71                          ;
 ; cycloneiii_io_obuf    ; 2                           ;
-; cycloneiii_lcell_comb ; 2408                        ;
+; cycloneiii_lcell_comb ; 2421                        ;
 ;     arith             ; 522                         ;
 ;         2 data inputs ; 192                         ;
 ;         3 data inputs ; 330                         ;
-;     normal            ; 1886                        ;
+;     normal            ; 1899                        ;
 ;         0 data inputs ; 40                          ;
 ;         1 data inputs ; 24                          ;
-;         2 data inputs ; 700                         ;
-;         3 data inputs ; 97                          ;
-;         4 data inputs ; 1025                        ;
+;         2 data inputs ; 664                         ;
+;         3 data inputs ; 109                         ;
+;         4 data inputs ; 1062                        ;
 ; cycloneiii_pll        ; 1                           ;
-; cycloneiii_ram_block  ; 328                         ;
+; cycloneiii_ram_block  ; 332                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 58.40                       ;
 ; Average LUT depth     ; 22.22                       ;
@@ -2097,7 +2214,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:17     ;
+; Top            ; 00:00:18     ;
 +----------------+--------------+
 
 
@@ -2107,7 +2224,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Dec 09 14:57:11 2022
+    Info: Processing started: Fri Dec 09 16:35:18 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -2137,6 +2254,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file altera_
     Info (12023): Found entity 1: Altera_UP_PS2_Data_In File: C:/Users/Owner/Documents/FlappyBird/Altera_UP_PS2_Data_In.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file altera_up_ps2_command_out.v
     Info (12023): Found entity 1: Altera_UP_PS2_Command_Out File: C:/Users/Owner/Documents/FlappyBird/Altera_UP_PS2_Command_Out.v Line: 10
+Warning (10238): Verilog Module Declaration warning at vga_controller.v(12): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "vga_controller" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.v
     Info (12023): Found entity 1: vga_controller File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file video_sync_generator.v
@@ -2257,7 +2375,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (12128): Elaborating entity "altsyncram_2m81" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Warning (287013): Variable or input pin "clocken0" is defined but never used. File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_2m81.tdf Line: 32
 Info (12128): Elaborating entity "PS2_Interface" for hierarchy "PS2_Interface:myps2" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 65
-Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2" File: C:/Users/Owner/Documents/FlappyBird/PS2_Interface.v Line: 26
+Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2" File: C:/Users/Owner/Documents/FlappyBird/PS2_Interface.v Line: 40
 Info (12128): Elaborating entity "Altera_UP_PS2_Data_In" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In" File: C:/Users/Owner/Documents/FlappyBird/PS2_Controller.v Line: 248
 Info (12128): Elaborating entity "Altera_UP_PS2_Command_Out" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out" File: C:/Users/Owner/Documents/FlappyBird/PS2_Controller.v Line: 268
 Info (12128): Elaborating entity "lcd" for hierarchy "lcd:mylcd" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 68
@@ -2326,18 +2444,18 @@ Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_componen
     Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
-Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 98
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(47): truncated value with size 32 to match size of target (19) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 47
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(113): truncated value with size 32 to match size of target (10) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 113
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(126): truncated value with size 32 to match size of target (2) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 126
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(139): truncated value with size 32 to match size of target (9) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 139
+Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 99
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(50): truncated value with size 32 to match size of target (19) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 50
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(116): truncated value with size 32 to match size of target (10) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 116
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(129): truncated value with size 32 to match size of target (2) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 129
 Warning (10230): Verilog HDL assignment warning at vga_controller.v(142): truncated value with size 32 to match size of target (9) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 142
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(180): truncated value with size 19 to match size of target (10) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 180
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(181): truncated value with size 19 to match size of target (9) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 181
-Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 37
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(145): truncated value with size 32 to match size of target (9) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 145
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(183): truncated value with size 19 to match size of target (10) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 183
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(184): truncated value with size 19 to match size of target (9) File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 184
+Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 40
 Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(77): truncated value with size 32 to match size of target (10) File: C:/Users/Owner/Documents/FlappyBird/video_sync_generator.v Line: 77
 Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(80): truncated value with size 32 to match size of target (11) File: C:/Users/Owner/Documents/FlappyBird/video_sync_generator.v Line: 80
-Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 56
+Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 59
 Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/Users/Owner/Documents/FlappyBird/img_data.v Line: 81
 Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/Users/Owner/Documents/FlappyBird/img_data.v Line: 81
 Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/img_data.v Line: 81
@@ -2365,7 +2483,7 @@ Info (12128): Elaborating entity "decode_aaa" for hierarchy "vga_controller:vga_
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_1pb.tdf
     Info (12023): Found entity 1: mux_1pb File: C:/Users/Owner/Documents/FlappyBird/db/mux_1pb.tdf Line: 23
 Info (12128): Elaborating entity "mux_1pb" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated|mux_1pb:mux2" File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_3oc1.tdf Line: 41
-Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 173
+Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 176
 Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/Users/Owner/Documents/FlappyBird/img_index.v Line: 82
 Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/Users/Owner/Documents/FlappyBird/img_index.v Line: 82
 Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/img_index.v Line: 82
@@ -2456,12 +2574,32 @@ Warning (14284): Synthesized away the following node(s):
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following PLL node(s):
         Warning (14320): Synthesized away node "pll:div|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0]" File: C:/Users/Owner/Documents/FlappyBird/db/pll_altpll.v Line: 78
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276031): Inferred altsyncram megafunction from the following design logic: "PS2_Interface:myps2|Selector3_rtl_0"
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 4
+        Info (286033): Parameter WIDTHAD_A set to 8
+        Info (286033): Parameter NUMWORDS_A set to 256
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
+        Info (286033): Parameter INIT_FILE set to skeleton.skeleton0.rtl.mif
 Info (278001): Inferred 3 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod1" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 180
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Div0" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 181
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod0" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 102
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod1" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 180
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod1" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 180
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod1" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 183
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Div0" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 184
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod0" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 105
+Info (12130): Elaborated megafunction instantiation "PS2_Interface:myps2|altsyncram:Selector3_rtl_0"
+Info (12133): Instantiated megafunction "PS2_Interface:myps2|altsyncram:Selector3_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "4"
+    Info (12134): Parameter "WIDTHAD_A" = "8"
+    Info (12134): Parameter "NUMWORDS_A" = "256"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
+    Info (12134): Parameter "INIT_FILE" = "skeleton.skeleton0.rtl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_tqv.tdf
+    Info (12023): Found entity 1: altsyncram_tqv File: C:/Users/Owner/Documents/FlappyBird/db/altsyncram_tqv.tdf Line: 28
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod1" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 183
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod1" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 183
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "10"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2476,16 +2614,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_7pc File: C:/Users/Owner/Documents/FlappyBird/db/add_sub_7pc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
     Info (12023): Found entity 1: add_sub_8pc File: C:/Users/Owner/Documents/FlappyBird/db/add_sub_8pc.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Div0" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 181
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Div0" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 181
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Div0" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 184
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Div0" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 184
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "10"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ikm.tdf
     Info (12023): Found entity 1: lpm_divide_ikm File: C:/Users/Owner/Documents/FlappyBird/db/lpm_divide_ikm.tdf Line: 25
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod0" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 102
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod0" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 102
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod0" File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 105
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod0" with the following parameter: File: C:/Users/Owner/Documents/FlappyBird/vga_controller.v Line: 105
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "18"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2599,22 +2737,29 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "seg8[6]" is stuck at VCC File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 37
     Warning (13410): Pin "VGA_SYNC" is stuck at GND File: C:/Users/Owner/Documents/FlappyBird/skeleton.v Line: 24
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 17 registers lost all their fanouts during netlist optimizations.
+Info (17049): 21 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/Owner/Documents/FlappyBird/output_files/skeleton.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (15897): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 921
 Warning (15899): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 921
-Info (21057): Implemented 3031 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3054 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 150 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 2545 logic cells
-    Info (21064): Implemented 328 RAM segments
+    Info (21061): Implemented 2564 logic cells
+    Info (21064): Implemented 332 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 191 warnings
-    Info: Peak virtual memory: 4815 megabytes
-    Info: Processing ended: Fri Dec 09 14:57:56 2022
-    Info: Elapsed time: 00:00:45
-    Info: Total CPU time (on all processors): 00:01:20
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 192 warnings
+    Info: Peak virtual memory: 4816 megabytes
+    Info: Processing ended: Fri Dec 09 16:36:07 2022
+    Info: Elapsed time: 00:00:49
+    Info: Total CPU time (on all processors): 00:01:24
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Owner/Documents/FlappyBird/output_files/skeleton.map.smsg.
 
 
