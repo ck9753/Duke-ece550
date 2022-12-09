@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Dec 08 16:48:22 2022
+Fitter Status : Successful - Fri Dec 09 14:59:27 2022
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : skeleton
 Top-level Entity Name : skeleton
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 2,413 / 114,480 ( 2 % )
-    Total combinational functions : 2,345 / 114,480 ( 2 % )
+Total logic elements : 2,475 / 114,480 ( 2 % )
+    Total combinational functions : 2,404 / 114,480 ( 2 % )
     Dedicated logic registers : 487 / 114,480 ( < 1 % )
 Total registers : 487
 Total pins : 157 / 529 ( 30 % )

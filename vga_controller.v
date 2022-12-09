@@ -122,7 +122,7 @@ begin
 		end
 		
 		// the case when the pipe passed the bird
-		if (x_pipe + 50 < x) begin
+		if (x_pipe + 50 == x - 1) begin
 			score <= score + 1;
 		end
 		
@@ -183,22 +183,45 @@ end
 
 always@(posedge VGA_CLK_n) begin
 	// score
-	if(score >= 2'd1 && ADDRx >= 20 && ADDRx < 30 && ADDRy < 30 && ADDRy > 20) begin
-		bgr_data <= 24'h6A0DAD;
-	end
+	//if()begin
+//	if(score >= 2'd3) begin
+//		if(ADDRx >= 20 && ADDRx < 30 && ADDRy < 30 && ADDRy > 20) 
+//			bgr_data <= 24'h6A0DAD;
+//		else if(ADDRx >= 20 && ADDRx < 30 && (ADDRy < 60 && ADDRy > 50)) 
+//			bgr_data <= 24'h6A0DAD;
+//		else if(ADDRx >= 20 && ADDRx < 30 && (ADDRy < 90 && ADDRy > 80)) 
+//			bgr_data <= 24'h6A0DAD;
+//		
+//	end
+//	
+//	else if(score >= 2'd2) begin
+//		if(ADDRx >= 20 && ADDRx < 30 && ADDRy < 30 && ADDRy > 20) 
+//			bgr_data <= 24'h6A0DAD;
+//		else if(ADDRx >= 20 && ADDRx < 30 && (ADDRy < 60 && ADDRy > 50)) 
+//			bgr_data <= 24'h6A0DAD;
+//	end
+//	
+//	else if(score >= 2'd1) begin
+//		if(ADDRx >= 20 && ADDRx < 30 && ADDRy < 30 && ADDRy > 20) 
+//			bgr_data <= 24'h6A0DAD;
+//		
+//	end
+	if(ADDRx >= 20 && ADDRx < 30 && (ADDRy < 30 + 30 * (score-1) && ADDRy > 20 + 30*(score-1))) 
+			bgr_data <= 24'h6A0DAD;
+	else if(ADDRx >= 20 && ADDRx < 30 && (ADDRy < 30 + 30 * (score-2) && ADDRy > 20 + 30*(score-2))) 
+			bgr_data <= 24'h6A0DAD;
+	else if(ADDRx >= 20 && ADDRx < 30 && (ADDRy < 30 + 30 * (score-3) && ADDRy > 20 + 30*(score-3))) 
+			bgr_data <= 24'h6A0DAD;
+//	
+//	else if (score >= 2'd2 && (ADDRx >= 20 && ADDRx < 30 && (ADDRy < 60 && ADDRy > 50))||(ADDRx >= 20 && ADDRx < 30 && ADDRy < 30 && ADDRy > 20)) begin
+//				bgr_data <= 24'h6A0DAD;
+//	end
+//	
+//	else if (score >= 2'd1 && ADDRx >= 20 && ADDRx < 30 && (ADDRy < 90 && ADDRy > 80)) begin
+//				bgr_data <= 24'h6A0DAD;
+
+	//end
 	
-//	if (score >= 2'd2) begin
-//		if(ADDRx >= 20 && ADDRx < 30 && (ADDRy < 60 && ADDRy > 50)) begin
-//				bgr_data <= 24'h6A0DAD;
-//		end
-//	end
-//	
-//	if (score >= 2'd3) begin
-//		if(ADDRx >= 20 && ADDRx < 30 && (ADDRy < 90 && ADDRy > 80)) begin
-//				bgr_data <= 24'h6A0DAD;
-//		end
-//	end
-//	
 
 	
 	// bird (block)
