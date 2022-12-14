@@ -88,12 +88,6 @@ module skeleton(resetn,
 								 .b_data(VGA_B),
 								 .g_data(VGA_G),
 								 .r_data(VGA_R),
-<<<<<<< HEAD
-=======
-								 .up(up),
-								 .reset(reset),
-								 .start(start),
->>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e
 								 .data(ps2_out));
 	
 	
