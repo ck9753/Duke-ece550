@@ -99,27 +99,15 @@ module vga_controller(iRST_n,
                       b_data,
                       g_data,
                       r_data,
-<<<<<<< HEAD
 //							 up,
 //							 reset,
 //							 start,
 							 data);
-=======
-							 up,
-							 reset,
-							 start,
-							 data,);
->>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e
 
 	
 input iRST_n;
 input iVGA_CLK;
-<<<<<<< HEAD
 //input up, reset, start;
-=======
-input up, reset, start;
-//keyboard input
->>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e
 input [7:0] data;
 output reg oBLANK_n;
 output reg oHS;
@@ -190,19 +178,11 @@ initial begin
 
 always@(posedge iVGA_CLK)
 begin
-<<<<<<< HEAD
 	if (data == 8'h51 && start_helper) begin
 		trigger <= 1;
 		start_helper <=0;
 	end
 	if (data == 8'h57) begin
-=======
-	if ((!start || data == 8'h51) && start_helper) begin //
-		trigger <= 1;
-		start_helper <=0;
-	end
-	if (!reset || data == 8'h57) begin //
->>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e
 		x <= 10'd100;
 		y <= 9'd240;
 		x_pipe <= 10'd590;
@@ -253,11 +233,7 @@ begin
 	 if(y < 9'd450 && y > 9'd0) begin
 		y <= y - 4; // falling down
 	 end
-<<<<<<< HEAD
 	 if (data == 8'h45) begin
-=======
-	 if (up || data == 8'h45) begin //up
->>>>>>> d5cdb7e90c63fb62db73cf8539fc2d9118e0926e
 		y <= y + 1;
 	 end
 	 
