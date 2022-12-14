@@ -242,7 +242,7 @@ begin
 	  
 	 end
 	 end
-	 assign data = 8'h0;
+//	 assign data = 8'h0;
 	//counter <= counter + 1;	
 //	if(x < 10'd610 || right != 1'b1) 
 //   x<=x + right;
