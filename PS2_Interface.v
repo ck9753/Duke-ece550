@@ -21,7 +21,7 @@ module PS2_Interface(inclock, resetn, ps2_clock, ps2_data, ps2_key_data, ps2_key
 				8'h1d: temp_ps2_key_data = 8'h57; //W
 				8'h24: temp_ps2_key_data = 8'h45; //E
 				8'h2d: temp_ps2_key_data = 8'h52; //R
-				default: temp_ps2_key_data = ps2_key_data;
+				default: temp_ps2_key_data = 8'h0;
 //			if (ps2_key_data == 8'h15) begin
 //				temp_ps2_key_data = 8'h51;
 //				//ps2_key_data = temp_ps2_key_data

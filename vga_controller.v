@@ -178,11 +178,11 @@ initial begin
 
 always@(posedge iVGA_CLK)
 begin
-	if (data == 8'h51 && start_helper) begin
+	if (data == 8'h51 && start_helper) begin // start Q
 		trigger <= 1;
 		start_helper <=0;
 	end
-	if (data == 8'h57) begin
+	if (data == 8'h57) begin // reset W
 		x <= 10'd100;
 		y <= 9'd240;
 		x_pipe <= 10'd590;
@@ -232,14 +232,17 @@ begin
 		
 	 if(y < 9'd450 && y > 9'd0) begin
 		y <= y - 4; // falling down
+		//y <= y + 4;
 	 end
-	 if (data == 8'h45) begin
+	 if (data == 8'h45) begin // up E
 		y <= y + 1;
+//		y <= y - 1;
 	 end
 	 
 	  
 	 end
 	 end
+	 assign data = 8'h0;
 	//counter <= counter + 1;	
 //	if(x < 10'd610 || right != 1'b1) 
 //   x<=x + right;
