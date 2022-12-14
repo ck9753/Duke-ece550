@@ -15,7 +15,7 @@ module PS2_Interface(inclock, resetn, ps2_clock, ps2_data, ps2_key_data, ps2_key
 	begin
 		if (resetn == 1'b0)
 			last_data_received <= 8'h00;
-		else if (ps2_key_pressed == 1'b1)
+		else if (ps2_key_pressed == 1'b1) 
 			case (ps2_key_data)
 				8'h15: temp_ps2_key_data = 8'h51; //Q
 				8'h1d: temp_ps2_key_data = 8'h57; //W
@@ -27,7 +27,10 @@ module PS2_Interface(inclock, resetn, ps2_clock, ps2_data, ps2_key_data, ps2_key
 //				//ps2_key_data = temp_ps2_key_data
 //			end
 			endcase
-			last_data_received <= temp_ps2_key_data;
+			
+		else if (ps2_key_pressed == 1'b0) temp_ps2_key_data = 8'h0;
+		
+		last_data_received <= temp_ps2_key_data;
 			
 	end
 

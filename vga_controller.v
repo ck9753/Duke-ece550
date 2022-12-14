@@ -109,6 +109,8 @@ input iRST_n;
 input iVGA_CLK;
 //input up, reset, start;
 input [7:0] data;
+
+
 output reg oBLANK_n;
 output reg oHS;
 output reg oVS;
@@ -118,7 +120,7 @@ output [7:0] r_data;
 ///////// ////                     
 reg [18:0] ADDR;
 reg [23:0] bgr_data;
-reg trigger, start_helper;
+reg trigger, start_helper, data_trigger;
 wire VGA_CLK_n;
 wire [7:0] index;
 wire [23:0] bgr_data_raw;
@@ -176,6 +178,10 @@ initial begin
  start_helper <= 1;
  end
 
+
+ 
+
+
 always@(posedge iVGA_CLK)
 begin
 	if (data == 8'h51 && start_helper) begin // start Q
@@ -191,7 +197,8 @@ begin
 		start_helper <= 1;
 		score <= 2'd0;
 	end
-	
+	if(data == 8'h45) 
+		data_trigger <= 1;
 	if (trigger) begin
 	counter <= counter + 1; 
    if(counter % 32'd250000 == 0)begin	  
@@ -231,18 +238,19 @@ begin
 	  
 		
 	 if(y < 9'd450 && y > 9'd0) begin
-		y <= y - 4; // falling down
-		//y <= y + 4;
-	 end
-	 if (data == 8'h45) begin // up E
+		//y <= y - 4; // falling down 
 		y <= y + 1;
-//		y <= y - 1;
+	 end
+	 if (data_trigger == 1) begin //data == 8'h45) begin // up E
+		//y <= y + 1; 
+		y <= y - 25;
+		data_trigger <= 0;
 	 end
 	 
 	  
 	 end
 	 end
-//	 assign data = 8'h0;
+	 //assign data = 8'h0;
 	//counter <= counter + 1;	
 //	if(x < 10'd610 || right != 1'b1) 
 //   x<=x + right;
@@ -304,6 +312,8 @@ always@(posedge VGA_CLK_n) begin
 //			bgr_data <= 24'h6A0DAD;
 //		
 //	end
+	if(score == 3) bgr_data <= 24'h6A0DAD;
+	else begin
 	if(ADDRx >= 20 && ADDRx < 30 && (ADDRy < 30 + 30 * (score-1) && ADDRy > 20 + 30*(score-1))) 
 			bgr_data <= 24'h6A0DAD;
 	else if(ADDRx >= 20 && ADDRx < 30 && (ADDRy < 30 + 30 * (score-2) && ADDRy > 20 + 30*(score-2))) 
@@ -346,6 +356,8 @@ always@(posedge VGA_CLK_n) begin
 	// background
 	else begin
 		bgr_data <= bgr_data_raw;
+	end
+	
 	end
 end
 
