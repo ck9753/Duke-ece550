@@ -1,0 +1,27 @@
+`timescale 1 ns / 100 ps
+
+module skeleton_tb();
+	// inputs to the DUT are reg type
+	reg clock, reset;
+	
+	// outputs from the DUT are wire type
+	wire imem_clock, dmem_clock, processor_clock, regfile_clock;
+	
+	
+	// Tracking the number of errors
+	integer errors;
+	integer index;
+	
+	// instantiate the DUT
+	
+	skeleton skeleton_ut (clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock);
+	
+	initial
+	begin
+		$display($time, " << Starting the simulation >>");
+		clock = 1'b; // at time 0
+		errors = 0;
+		
+	end
+
+endmodule

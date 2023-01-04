@@ -1,0 +1,80 @@
+`timescale 1 ns / 100 ps
+module register32_tb();
+    reg           clock, reset;
+    reg [31:0]    data_in;
+
+    wire [31:0] data_out;
+
+    integer errors;
+
+    pc_controller test_pc_controller(data_out, data_in, clock, reset);
+
+    initial begin
+        $display($time, " << Starting the Simulation >>");
+        clock = 1'b0;    // at time 0
+        errors = 0;
+
+        reset = 1'b1;    // assert reset
+        @(negedge clock);    // wait until next negative edge of clock
+
+        reset = 1'b0;    // de-assert reset
+        @(negedge clock);    // wait until next negative edge of clock
+		  
+		  writeRegister(32'h0000DEAD);
+		  readRegister(32'h0000DEAD);
+
+		  @(negedge clock);
+		  writeRegister(32'hFFFFFFFF);
+		  readRegister(32'hFFFFFFFF);
+		  
+		  @(negedge clock);
+		  reset = 1'b1;
+		  readRegister(32'h00000000);
+		  
+		  
+        if (errors == 0) begin
+            $display("The simulation completed without errors");
+        end
+        else begin
+            $display("The simulation failed with %d errors", errors);
+        end
+
+        $stop;
+    end
+
+
+
+    // Clock generator
+    always
+         #10     clock = ~clock;    // toggle
+
+    // Task for writing
+    task writeRegister;
+        input [31:0] value;
+
+        begin
+            @(negedge clock);    // wait for next negedge of clock
+            $display($time, " << Writing register with %h >>", value);
+
+            enable = 1'b1;
+            data_in = value;
+
+            @(negedge clock); // wait for next negedge, write should be done
+            enable = 1'b0;
+        end
+    endtask
+
+    // Task for reading
+    task readRegister;
+        input [31:0] exp;
+
+        begin
+
+            @(negedge clock); // wait for next negedge, read should be done
+            if(data_out !== exp) begin
+                $display("**Error on data out: read %h but expected %h.", data_out, exp);
+                errors = errors + 1;
+            end
+        end
+    endtask
+endmodule

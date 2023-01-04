@@ -1,0 +1,6 @@
+output_files/*
+greybox_tmp/*
+incremental_db/*
+db/*
+simulation/*
+ece550asm_2.1.0_Win_amd64/*

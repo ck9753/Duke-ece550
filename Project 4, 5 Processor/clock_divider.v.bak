@@ -1,0 +1,13 @@
+module clock_divider(out_clock, clock, reset);
+	output reg out_clock;
+	input clock, reset;
+	
+	always @(posedge clock)
+	begin	
+	if (reset)
+     out_clock <= 1'b0;
+	else
+     out_clock <= ~out_clock;	
+	end
+
+endmodule

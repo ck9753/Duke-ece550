@@ -1,0 +1,6 @@
+module pc(next_ins, clock, reset);
+	input clock, reset;
+	output[11:0] next_ins;
+
+
+endmodule

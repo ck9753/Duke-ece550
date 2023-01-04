@@ -1,0 +1,42 @@
+module ctrl_circuit (ctrl_Rwe, ctrl_Rdst, ctrl_DMwe, ctrl_Rwd, ctrl_ALUinB, opcode);
+	input [4:0]opcode;
+	output ctrl_Rwe, ctrl_Rdst, ctrl_DMwe, ctrl_Rwd, ctrl_ALUinB;
+	
+	// negate each bits of opcode
+	not not0 (n_s0, opcode[0]);
+	not not1 (n_s1, opcode[1]);
+	not not2 (n_s2, opcode[2]);
+	not not3 (n_s3, opcode[3]);
+	not not4 (n_s4, opcode[4]);
+	
+	// get each bits of opcode
+	and and0 (s0, opcode[0], 1);
+	and and1 (s1, opcode[1], 1);
+	and and2 (s2, opcode[2], 1);
+	and and3 (s3, opcode[3], 1);
+	and and4 (s4, opcode[4], 1);
+	
+	// Rwe
+	and and6 (Rwe_1, n_s4, n_s3, n_s2, n_s1, n_s0);
+	and and7 (Rwe_2, n_s4, n_s3, s2, n_s1, s0);
+	and and8 (Rwe_3, n_s4, s3, n_s2, n_s1, n_s0);
+	
+	or or0 (ctrl_Rwe, Rwe_1, Rwe_2, Rwe_3);
+	
+	// Rdst
+	and and9 (ctrl_Rdst, n_s4, n_s3, n_s2, n_s1, n_s0);
+	
+	// DMwe
+	and and10 (ctrl_DMwe, n_s4, n_s3, s2, s1, s0);
+	
+	// Rwd
+	and and11 (ctrl_Rwd, n_s4, s3, n_s2, n_s1, n_s0);
+	
+	// ALUinB
+	and and12 (ALUinB_1, n_s4, n_s3, s2, n_s1, s0);
+	and and13 (ALUinB_2, n_s4, n_s3, s2, s1, s0);
+	and and14 (ALUinB_3, n_s4, s3, n_s2, n_s1, n_s0);
+	
+	or or1 (ctrl_ALUinB, ALUinB_1, ALUinB_2, ALUinB_3);
+
+endmodule

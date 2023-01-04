@@ -1,0 +1,26 @@
+module pc_controller(next_ins, clock, reset);
+	input clock, reset;
+	output next_ins;
+
+	wire[31:0] start_ins, temp_ins;
+	wire isNotEqual, isLessThan, overflow;
+	
+	localparam [31:0]
+		contant = 4;
+		start_ins = 0;
+	
+	alu processor_alu(
+		start_ins, 
+		constant, 
+		5'b00000, 
+		5'b00000, 
+		temp_ins,
+		isNotEqual, 
+		isLessThan, 
+		overflow
+		);
+		
+		pc pc_reg(next_ins, temp_ins[11:0], clock, reset);
+		
+
+endmodule
