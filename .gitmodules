@@ -1,0 +1,3 @@
+[submodule "flappy-bird"]
+	path = flappy-bird
+	url = https://gitlab.oit.duke.edu/flappy-block/flappy-bird.git
